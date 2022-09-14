@@ -1,0 +1,76 @@
+.page__content {
+  padding: 3rem;
+}
+
+.prompt__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(1, 100%, 0%, 0.3),
+      hsla(1, 100%, 0%, 0.6)
+    ),
+    url(../public/img/prompt-hero.jpg);
+  background-size: cover;
+  padding: 4rem;
+}
+
+.prompt__text {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(1, 100%, 0%, 0.3),
+    hsla(1, 100%, 0%, 0.6)
+  );
+  padding: 3rem;
+}
+
+.prompt__title {
+  font-size: 6rem;
+  font-family: "Allura", cursive;
+  color: #fff;
+  text-align: center;
+}
+.prompt__subtitle {
+  font-size: 2rem;
+  font-family: "Roboto Slab", serif;
+  color: #fff;
+}
+.prompt__result {
+  min-height: 20vh;
+  min-width: 100%;
+  margin: 2rem;
+  padding: 2rem;
+  color: #fff;
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(1, 100%, 0%, 0.3),
+    hsla(1, 100%, 0%, 0.6)
+  );
+}
+
+.prompt__result--text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  display: block;
+  padding: 1rem 0;
+  line-height: 4rem;
+}
+
+.prompt__result--citation {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.8rem;
+  text-align: right;
+  display: block;
+  padding: 1rem 0;
+}
+
+.prompt__btn {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.4rem;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 20px;
+}

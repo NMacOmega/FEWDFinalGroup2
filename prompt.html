@@ -1,0 +1,44 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/prompt.css" />
+    <script src="./js/handlebars.min-v4.7.7.js"></script>
+    <title>Prompt</title>
+  </head>
+  <body>
+    <div class="body__grid">
+      <div id="nav"></div>
+      <main class="page__content">
+        <!-- BEGIN PAGE CONTENT -->
+        <div class="prompt__container">
+          <div class="prompt__text">
+            <h1 class="prompt__title">Let's get inspired</h1>
+            <h3 class="prompt__subtitle">
+              Generate a sample to complement your work
+            </h3>
+          </div>
+          <div class="prompt__result">
+            <span class="prompt__result--text" id="prompt-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
+              quibusdam numquam vel, aspernatur recusandae animi veniam delectus
+              voluptates eveniet in sequi a error iure perferendis temporibus
+              commodi similique voluptatibus nesciunt sunt qui vero. Dolore
+              commodi velit nam blanditiis harum excepturi. Tempora, velit
+              alias. At suscipit non nulla animi possimus odio!
+            </span>
+            <span class="prompt__result--citation" id="prompt-citation">
+              - Lawrence Fishburn, 1978
+            </span>
+          </div>
+          <button class="prompt__btn">Generate</button>
+        </div>
+        <!-- END PAGE CONTENT -->
+      </main>
+      <div id="footer"></div>
+    </div>
+    <script src="./js/partials.js"></script>
+  </body>
+</html>

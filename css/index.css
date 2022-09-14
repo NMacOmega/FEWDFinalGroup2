@@ -1,0 +1,37 @@
+.hero-placeholder {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(8, 1fr);
+  grid-column-gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-placeholder__img {
+  max-width: 100%;
+  grid-column: 1 / span 1;
+  grid-row: 1 / -1;
+}
+
+.hero-placeholder__text {
+  grid-column: 2 / span 1;
+  grid-row: 4 / 6;
+  min-width: 50vw;
+  align-self: end;
+
+  background-color: #fff;
+
+  /* position: absolute;
+  bottom: 0; */
+}
+
+.hero-placeholder__title {
+  font-family: "Allura", cursive;
+  font-size: 9rem;
+}
+
+.hero-placeholder__subtitle {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+}
