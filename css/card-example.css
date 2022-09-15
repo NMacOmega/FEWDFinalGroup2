@@ -1,0 +1,227 @@
+.card__title {
+  text-align: center;
+  font-size: 4rem;
+  margin: 4rem 0;
+  font-family: "Roboto Slab", serif;
+}
+
+.card__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 20vw);
+  grid-column-gap: 10vw;
+  justify-content: center;
+  padding: 3rem 0;
+}
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  height: 52rem;
+}
+
+.card:hover .card__side--front {
+  transform: rotateY(-180deg);
+}
+
+.card:hover .card__side--back {
+  transform: rotateY(0);
+}
+
+.card__side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 52rem;
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  -webkit-backface-visibility: hidden; //Needed for Safari 9, ALWAYS USE CANIUSE.com to check
+  backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 4rem hsla(0, 100%, 0%, 0.15);
+}
+
+/*Front of Card*/
+.card__side--front {
+  background-color: #fff;
+}
+.card__artist-picture {
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+  border-radius: 50%;
+  margin-bottom: 5rem;
+}
+
+.card__artist-picture--1 {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0)
+    ),
+    url(../public/img/John-Chuang.jpg);
+}
+
+.card__artist-picture--2 {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0)
+    ),
+    url(../public/img/Lisa-May.jpg);
+}
+
+.card__artist-picture--3 {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0)
+    ),
+    url(../public/img/Roger-Boyle.jpg);
+}
+
+.card__artist-name {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+.card__artist-title {
+  font-size: 2.2rem;
+  color: #9b9b9b;
+  margin-bottom: 3rem;
+}
+.card__artist-desc {
+}
+
+/*Back of card*/
+.card__side--back {
+  transform: rotateY(180deg);
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.card__side--back-1 {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(10, 100%, 50%, 1),
+    hsla(0, 0%, 0%, 0)
+  );
+}
+
+.card__side--back-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 100%, 0%, 1),
+    hsla(10, 10%, 60%, 1)
+  );
+}
+
+.card__side--back-3 {
+  background-image: linear-gradient(
+    to right bottom,
+    hsla(0, 0%, 0%, 0),
+    hsla(40, 80%, 40%, 2)
+  );
+}
+
+.card__work-img {
+  width: 80%;
+  height: 60%;
+}
+.card__work-img-1 {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0)
+    ),
+    url(../public/img/John-Chang-Work.jpg);
+  background-size: cover;
+}
+.card__work-img-2 {
+  background-image: linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0),
+      hsla(0, 0%, 0%, 0)
+    ),
+    url(../public/img/Roger-Boyle-Work.jpg);
+  background-size: cover;
+}
+.card__work-text {
+  font-size: 1.4rem;
+  padding: 0 3rem;
+  color: #fff;
+}
+
+.card__work-text-1 {
+  margin-top: 6rem;
+}
+
+.card__work-link {
+  text-decoration: none;
+  padding: 2rem;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: margin-left 0.2s;
+}
+
+.card__work-link-1,
+.card__work-link-3 {
+  border-bottom: 1px solid #000;
+}
+.card__work-link-2 {
+  border-bottom: 1px solid #fff;
+}
+= .card__work-link:hover,
+.card__work-link:focus {
+  outline: none;
+  animation: pulsate 1s infinite;
+}
+
+.card__work-link:hover .card__work-link--text {
+  margin-left: 8px;
+}
+
+.card__work-link--text {
+  color: #000;
+  font-size: 1.4rem;
+  margin-left: 3px;
+  transition: all 0.2s;
+}
+
+.card__work-link-1:hover {
+  background-color: hsla(10, 100%, 50%, 1);
+}
+
+.card__work-link-1:hover .card__work-link--text-1 {
+  color: #fff;
+}
+
+.card__work-link--text-2 {
+  color: #fff;
+}
+
+.card__work-link-2:hover {
+  background-color: hsla(10, 100%, 0%, 1);
+}
+
+.card__work-link-1:hover,
+.card__work-link-2:hover,
+.card__work-link-3:hover {
+  border-bottom: none;
+}
+
+.card__work-link-2:hover .card__work-link--text-1 {
+  color: #fff;
+}
+
+.card__work-link-3:hover {
+  background-color: hsla(40, 80%, 40%, 2);
+}
+
+.card__work-link-3:hover .card__work-link--text-3 {
+  color: #fff;
+}
