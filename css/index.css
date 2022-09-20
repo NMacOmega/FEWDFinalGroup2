@@ -1,4 +1,186 @@
-.hero-placeholder {
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  /* background: #faf0ca; */
+  background: #f4d35e;
+  color: #f95738;
+}
+
+.hero-container{
+  display: flex;
+  flex-direction: row;
+  height: 90vh;
+}
+.heroimg-a {
+  align-self: flex-start;
+  width: 30vw;  
+  margin-top: 20px;
+}
+.heroimg-a > img {
+  width: 25vw;
+  padding-left: 50px;
+}
+.heroimg-b {
+  align-self: flex-end;
+  
+}
+
+.heroimg-b > img {
+  width: 30vw;
+  padding-right: 50px; 
+}
+
+.hero-text{
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  width: 40vw;
+}
+
+.hero-text > h1 {
+  font-size: 3em;
+}
+
+.hero-text > button {
+  background: #f95738;
+  border: none;
+  padding: 15px 20px;
+  color: #faf0ca;
+  margin-top: 80px;
+  font-size: 1.7em;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+.hero-text > button:hover {
+  background: #c42530;
+}
+
+/* END OF HERO SECTION */
+/*DESCRIPTION SECTION */
+.description-section {
+  background: #0D3B66;
+  padding: 80px auto; 
+}
+
+.description-section > p {
+  font-size: 2em;
+  color:#faf0ca;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 160px 0;
+  line-height: 50px;
+
+}
+
+/*FEARTURED CREATIVES SECTION */
+
+.featured-section{
+  /* background-color: #2154AF; */
+  background: #faf0ca;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  font-size: 2.5em;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.featured-section > h2 {
+  color: #0D3B66;
+
+}
+/* NEWSLETTER SECTION */
+.newsletter-section {
+  background: #0D3B66;
+  /* width: 100vw; */
+}
+
+.newsletter-section > h2 {
+  color: #faf0ca;
+}
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#email {
+  width: 300px;
+  height: 30px;
+  margin-top: 40px;
+  padding: 5px;
+}
+
+#submit {
+  background-color: #f95738;
+  border: none;
+  border-radius: 3px;
+  color: #faf0ca;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 12px 20px;
+  margin-top: 40px;
+  margin-bottom: 120px;
+
+}
+
+#submit:hover {
+  background: #c42530;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .hero-placeholder {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: repeat(8, 1fr);
@@ -24,9 +206,9 @@
 
   /* position: absolute;
   bottom: 0; */
-}
 
-.hero-placeholder__title {
+
+/* .hero-placeholder__title {
   font-family: "Allura", cursive;
   font-size: 9rem;
 }
@@ -34,4 +216,4 @@
 .hero-placeholder__subtitle {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
-}
+} */ 
