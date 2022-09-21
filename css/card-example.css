@@ -1,21 +1,18 @@
-.card__title {
-  text-align: center;
-  font-size: 4rem;
-  margin: 4rem 0;
-  font-family: "Roboto Slab", serif;
-}
 
 .card__grid {
   display: grid;
-  grid-template-columns: repeat(3, 20vw);
-  grid-column-gap: 10vw;
+  grid-template-columns: repeat(3, 24vw);
+  grid-column-gap: 6vw;
   justify-content: center;
   padding: 3rem 0;
+  padding-bottom: 180px; 
 }
+
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 52rem;
+  font-family: 'Montserrat'; 
 }
 
 .card:hover .card__side--front {
@@ -39,18 +36,18 @@
   width: 100%;
   -webkit-backface-visibility: hidden; //Needed for Safari 9, ALWAYS USE CANIUSE.com to check
   backface-visibility: hidden;
-  border-radius: 20px;
+  border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0 1.5rem 4rem hsla(0, 100%, 0%, 0.15);
+  
 }
 
 /*Front of Card*/
 .card__side--front {
-  background-color: #fff;
+  background-color: #f95738;
 }
 .card__artist-picture {
-  width: 15rem;
-  height: 15rem;
+  width: 20rem;
+  height: 20rem;
   background-size: cover;
   border-radius: 50%;
   margin-bottom: 5rem;
@@ -84,46 +81,30 @@
 }
 
 .card__artist-name {
-  font-size: 3rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
+  color: #0d3b66;
+  font-weight: 800;
 }
 .card__artist-title {
-  font-size: 2.2rem;
-  color: #9b9b9b;
+  font-size: 1.6rem;
+  color: #faf0ca;
   margin-bottom: 3rem;
+  padding-top: 8px;
+  font-weight: bold;
 }
 .card__artist-desc {
+  color: #faf0ca;
+  font-size: 1.4rem; 
+  width: 75%;
 }
 
 /*Back of card*/
 .card__side--back {
   transform: rotateY(180deg);
   justify-content: space-between;
-  padding: 10rem 0;
-}
-
-.card__side--back-1 {
-  background-image: linear-gradient(
-    to right bottom,
-    hsla(10, 100%, 50%, 1),
-    hsla(0, 0%, 0%, 0)
-  );
-}
-
-.card__side--back-2 {
-  background-image: linear-gradient(
-    to right bottom,
-    hsla(0, 100%, 0%, 1),
-    hsla(10, 10%, 60%, 1)
-  );
-}
-
-.card__side--back-3 {
-  background-image: linear-gradient(
-    to right bottom,
-    hsla(0, 0%, 0%, 0),
-    hsla(40, 80%, 40%, 2)
-  );
+  padding: 8rem 0;
+  background:#f4d35e;
 }
 
 .card__work-img {
@@ -151,11 +132,10 @@
 .card__work-text {
   font-size: 1.4rem;
   padding: 0 3rem;
-  color: #fff;
-}
-
-.card__work-text-1 {
-  margin-top: 6rem;
+  color: #0d3b66;
+  width: 85%;
+  font-weight: 500;
+  margin-top: 4rem;
 }
 
 .card__work-link {
@@ -166,15 +146,13 @@
   background-color: transparent;
   cursor: pointer;
   transition: margin-left 0.2s;
+
 }
 
-.card__work-link-1,
-.card__work-link-3 {
-  border-bottom: 1px solid #000;
+.card__work-link {
+  border-bottom: 2px solid #000;
 }
-.card__work-link-2 {
-  border-bottom: 1px solid #fff;
-}
+
 = .card__work-link:hover,
 .card__work-link:focus {
   outline: none;
@@ -186,8 +164,9 @@
 }
 
 .card__work-link--text {
-  color: #000;
-  font-size: 1.4rem;
+  color: #0d3b66;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-left: 3px;
   transition: all 0.2s;
 }
@@ -200,11 +179,8 @@
   color: #fff;
 }
 
-.card__work-link--text-2 {
-  color: #fff;
-}
 
-.card__work-link-2:hover {
+/* .card__work-link-2:hover {
   background-color: hsla(10, 100%, 0%, 1);
 }
 
@@ -224,4 +200,4 @@
 
 .card__work-link-3:hover .card__work-link--text-3 {
   color: #fff;
-}
+} */

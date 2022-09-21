@@ -1,13 +1,13 @@
 let navPartial = `
     <ul class= 'nav__list'>
         <li class = 'nav__item--logo'>
-            <a class = 'nav__link--logo' href = './index.html'><span class="nav__logo">Group 2</span></a>
+            <a class = 'nav__link--logo' href = './index.html'><span class="nav__logo">Home</span></a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './mission.html'><span class="nav__text">Featured Artists</span></a>
         </li>
         <li class = 'nav__item'>
-            <a class = 'nav__link' href = './questionnaire.html'><span class="nav__text">Questionnaire</span></a>
+            <a class = 'nav__link' href = './questionnaire.html'><span class="nav__text">Featured Creators</span></a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './prompt.html'><span class="nav__text">Prompt</span></a>
@@ -22,7 +22,7 @@ let footerPartial = `
         <a class = 'footer__link' href = './mission.html'><span class="footer__text">Featured Artists</span></a>
     </li>
     <li class = 'footer__item'>
-        <a class = 'footer__link' href = './questionnaire.html'><span class="footer__text">Questionnaire</span></a>
+        <a class = 'footer__link' href = './questionnaire.html'><span class="footer__text">Featured Creators</span></a>
     </li>
     <li class = 'footer__item'>
         <a class = 'footer__link' href = './prompt.html'><span class="footer__text">Prompt</span></a>
