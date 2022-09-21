@@ -1,0 +1,105 @@
+/* Hex codes: 
+blue: #0d3b66;
+off-white: #faf0ca;
+yellow: #f4d35e;
+orange: #ee964b;
+red: #f95738 */
+
+.about_layout {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.about_menu {
+    min-height: 60vh;
+    flex-basis: 200px;
+    background-color: #f95738;
+    flex-grow: 1;
+    padding: 0.5em;
+}
+
+.about_main {
+    min-height: 60vh;
+    flex-grow: 2;
+    overflow: auto;
+    padding: 1.5em;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    
+}
+a {
+    text-decoration: none;
+    color:#0d3b66;
+}
+li {
+    margin-top: 25px;
+    
+}
+
+iframe {
+    width: 40vw;
+    height: 25vw;
+    overflow: hidden;
+    border: black solid 3px;
+    margin-bottom: 10px;
+}
+
+#iframe_center {
+    text-align: center;
+}
+
+.about_title {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin: 2vh 0;
+    color:#f95738;
+}
+
+/* .about_subtitle {
+    color: #ee964b;
+} */
+
+.meet_team_sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.meet_team {
+    width: 15vw;
+    height: auto;
+}
+
+
+.team_block {
+    width: 15vw;
+    height: auto;
+    margin-bottom: 4vh;
+    margin-left: 1vw;
+}
+
+
+img {
+    border-radius: 10px;
+    border: #0d3b66 solid 1px;
+}
+h4 {
+    margin: 1vh;
+    font-weight: 300;
+    color: #0d3b66;
+}
+i {
+    color: #0d3b66;
+    margin-top: 1vh;
+}
+i:hover {
+    color:#f95738;
+}

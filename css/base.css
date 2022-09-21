@@ -4,6 +4,12 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
+/* Hex codes: blue: #0d3b66; 
+off-white: #faf0ca; 
+yellow: #f4d35e; 
+orange: #ee964b; 
+red: #f95738 */
+
 :root {
   /* COLOR VARIABLES*/
   --color-primary: hsl(26, 73%, 34%);
@@ -25,6 +31,18 @@ font-family: 'Roboto Slab', serif; */
   --bp-large: 62.5em; /* 1000px */
   --bp-medium: 50em; /* 800px */
   --bp-small: 37.5em; /* 600px; */
+}
+
+/*Animations*/
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 /* Global Reset */
@@ -163,6 +181,12 @@ body {
   }
 }
 
+@media only screen and (max-width: 34.375em) {
+  html {
+    padding: 0 1vw;
+  }
+}
+
 /*Footer Section*/
 
 .footer {
@@ -201,4 +225,16 @@ body {
   text-align: center;
   color: var(--color-grey-dark);
   font-size: 1rem;
+}
+
+/*Common Components*/
+.spinner {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 3px solid rgba(195, 195, 195, 0.6);
+  border-radius: 50%;
+  border-top-color: #636767;
+  animation: spin 1s ease-in-out infinite;
+  -webkit-animation: spin 1s ease-in-out infinite;
 }
