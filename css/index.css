@@ -65,12 +65,14 @@ body {
 .description-section {
   background: #0D3B66;
   padding: 80px auto; 
+  display: flex;
 }
 
 .description-section > p {
   font-size: 2em;
   color:#faf0ca;
   width: 60%;
+  min-height: 60vh;
   text-align: center;
   margin: 0 auto;
   padding: 160px 0;
@@ -89,7 +91,7 @@ body {
 h2 {
   margin-top: 120px;
   margin-bottom: 80px;
-  font-size: 2.5em;
+  font-size: 3em;
   text-align: center;
   text-transform: capitalize;
 }
@@ -116,9 +118,9 @@ form {
 
 #email {
   width: 300px;
-  height: 30px;
-  margin-top: 40px;
+  height: 40px;
   padding: 5px;
+  font-size: 14px;
 }
 
 #submit {
@@ -126,7 +128,7 @@ form {
   border: none;
   border-radius: 3px;
   color: #faf0ca;
-  font-size: 1.2em;
+  font-size: 1.3em;
   font-weight: bold;
   padding: 12px 20px;
   margin-top: 40px;
