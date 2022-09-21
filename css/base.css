@@ -4,45 +4,25 @@
 font-family: 'Montserrat', sans-serif;
 font-family: 'Roboto Slab', serif; */
 
-/* Hex codes: blue: #0d3b66; 
-off-white: #faf0ca; 
-yellow: #f4d35e; 
-orange: #ee964b; 
-red: #f95738 */
-
 :root {
   /* COLOR VARIABLES*/
-  --color-primary: hsl(26, 73%, 34%);
-  --color-secondary: hsl(35, 100%, 40%);
-  --color-tertiary: hsl(120, 100%, 30%);
-
   --color-grey: #999;
   --color-grey-dark: hsl(10, 100%, 20%);
+
+  --color-red: #f95738;
+  --color-red-dark: #c42530;
+  --color-blue: #0d3b66;
+  --color-yellow: #f4d35e;
+  --color-orange: #ee964b;
+  --color-off-white: #faf0ca;
 
   /* FONT VARIABLES */
   /* $font-primary: "Nunito", sans-serif; */
   /* $font-display: "Josefin Sans", sans-serif; */
+
+  /* FONT SIZES */
+
   --size-font-default: 1.2rem;
-
-  /* Shadow Variables */
-
-  /* RESPONSIVE BREAKPOINTS */
-  --bp-largest: 75em; /* 1200px converted to em for breakpoints */
-  --bp-large: 62.5em; /* 1000px */
-  --bp-medium: 50em; /* 800px */
-  --bp-small: 37.5em; /* 600px; */
-}
-
-/*Animations*/
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
-}
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-  }
 }
 
 /* Global Reset */
@@ -61,7 +41,7 @@ red: #f95738 */
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* On default settings, font will be 10px instead of 16px */
-  background-color: var(--color-primary);
+  background-color: var(--color-red-dark);
   /* font-family: "Nunito", sans-serif; */
   padding: 0 3rem;
 }
@@ -84,7 +64,7 @@ body {
 }
 
 ::selection {
-  background-color: var(--color-primary);
+  background-color: var(--color-red);
   color: #fff;
 }
 
@@ -139,6 +119,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-column-gap: 2rem;
   align-items: stretch;
+  background-color: var(--color-yellow);
 }
 
 .nav__item {
@@ -153,12 +134,16 @@ body {
   background-color: #00000050;
 }
 
+.nav__item:hover > * {
+  color: #fff;
+}
+
 .nav__text {
   font-size: 1.8rem;
 }
 
 .nav__item--logo {
-  background-color: var(--color-primary);
+  background-color: var(--color-red-dark);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +180,7 @@ body {
 /*Footer Section*/
 
 .footer {
-  background-color: var(--color-secondary);
+  background-color: var(--color-red);
   padding: 3rem;
 }
 
@@ -241,4 +226,16 @@ body {
   border-top-color: #636767;
   animation: spin 1s ease-in-out infinite;
   -webkit-animation: spin 1s ease-in-out infinite;
+}
+
+/*Animations*/
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
