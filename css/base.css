@@ -73,8 +73,9 @@ body {
 }
 
 .body__grid {
+  min-height: 100%;
   display: grid;
-  grid-auto-rows: auto;
+  grid-auto-rows: auto 1fr auto;
   grid-template-columns: 1fr;
 }
 
@@ -153,7 +154,7 @@ body {
 }
 
 .nav__text {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .nav__item--logo {
@@ -161,6 +162,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem;
 }
 
 .nav__logo {
