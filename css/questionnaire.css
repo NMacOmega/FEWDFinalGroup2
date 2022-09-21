@@ -1,0 +1,101 @@
+/* Featured Creators page */
+
+body {
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h2 {
+    margin-top: 120px;
+    margin-bottom: 80px;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .text1 > p {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .author {
+    display: flex;
+    justify-content: left;
+    margin-left: 100px;
+
+  }
+
+  .authorimg {
+    width:150px;
+    height:150px;
+    object-fit:cover;
+    border-radius:50%;
+  }
+
+  .authorwork {
+        position: relative;
+        width: 900px;
+        margin: 50px;
+        border-radius: 15px;
+        background: #f95738;
+        color: #faf0ca;
+        padding: 40px;
+        text-align: center;
+        font-size: 14px
+      }
+
+      .sb1:before {
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        border-left: 15px solid transparent;
+        border-right: 15px solid #f95738;
+        border-top: 15px solid #f95738;
+        border-bottom: 15px solid transparent;
+        left: -16px;
+        top: 0px;
+      }  
+
+      .artist {
+        display: flex;
+        justify-content: right;
+        margin-right: 100px;
+    
+      }
+    
+      .artistimg {
+        width:150px;
+        height:150px;
+        object-fit:cover;
+        border-radius:50%;
+        transform: scaleX(-1);
+      }
+    
+      .artistwork {
+            position: relative;
+            width: 900px;
+            margin: 50px;
+            border-radius: 15px;
+            background: #f95738;
+            color: #faf0ca;
+            padding: 40px;
+            text-align: center;
+            font-size: 14px
+          }
+
+    .sb2:before {
+        
+            content: "";
+            width: 0px;
+            height: 0px;
+            position: absolute;
+            border-left: 15px solid #f95738;
+            border-right: 15px solid transparent;
+            border-top: 15px solid #f95738;
+            border-bottom: 15px solid transparent;
+            right: -16px;
+            top: 0px;
+            
+          
+}
+    
