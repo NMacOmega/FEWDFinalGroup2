@@ -41,8 +41,8 @@ li {
 }
 
 iframe {
-    width: 60vw;
-    height: 35vw;
+    width: 40vw;
+    height: 25vw;
     overflow: hidden;
     border: black solid 3px;
     margin-bottom: 10px;
