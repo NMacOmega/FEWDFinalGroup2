@@ -1,7 +1,7 @@
 let navPartial = `
     <ul class= 'nav__list'>
         <li class = 'nav__item--logo'>
-            <a class = 'nav__link--logo' href = './index.html'><span class="nav__logo">Home</span></a>
+            <a class = 'nav__link--logo' href = './index.html'><span class="nav__logo">Fine Art Fusion</span></a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './mission.html'><span class="nav__text">About Us</span></a>
@@ -10,10 +10,10 @@ let navPartial = `
             <a class = 'nav__link' href = './questionnaire.html'><span class="nav__text">Featured Creators</span></a>
         </li>
         <li class = 'nav__item'>
-            <a class = 'nav__link' href = './prompt.html'><span class="nav__text">Prompt</span></a>
+            <a class = 'nav__link' href = './prompt.html'><span class="nav__text">Find Inspiration</span></a>
         </li>
         <li class = 'nav__item'>
-        <a class = 'nav__link' href = './signup.html'><span class="nav__text">Sign Up</span></a>
+        <a class = 'nav__link' href = './signup.html'><span class="nav__text">Become a member</span></a>
     </li>    
     </ul>`;
 let footerPartial = `
@@ -28,10 +28,10 @@ let footerPartial = `
         <a class = 'footer__link' href = './questionnaire.html'><span class="footer__text">Featured Creators</span></a>
     </li>
     <li class = 'footer__item'>
-        <a class = 'footer__link' href = './prompt.html'><span class="footer__text">Prompt</span></a>
+        <a class = 'footer__link' href = './prompt.html'><span class="footer__text">Find Inspiration</span></a>
     </li>   
     <li class = 'footer__item'>
-        <a class = 'footer__link' href = './signup.html'><span class="footer__text">Sign Up</span></a>
+        <a class = 'footer__link' href = './signup.html'><span class="footer__text">Become a Member</span></a>
     </li> 
 </ul>
 <p class="footer__copyright">&copy; 2022 Group 2 Studios</p>
