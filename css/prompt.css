@@ -1,3 +1,5 @@
+/*Variables for this page*/
+/*___________________________*/
 :root {
   --dark-gradient: linear-gradient(
     to right bottom,
@@ -6,17 +8,8 @@
   );
 }
 
-/* Animations */
-@-webkit-keyframes pulseOutline {
-  from {
-    outline: solid 0 #f00;
-  }
-  to {
-    outline: solid 10px #f00;
-  }
-}
-
 /* Google Font Material Symbol Rule*/
+/*___________________________*/
 .material-symbols-outlined {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
@@ -456,6 +449,20 @@ prompt-write__result-text--container {
 .artist__highlight:hover .artist__highlight--more {
   visibility: visible;
 }
+
+/* Animations */
+/*___________________________*/
+@-webkit-keyframes pulseOutline {
+  from {
+    outline: solid 0 #f00;
+  }
+  to {
+    outline: solid 10px #f00;
+  }
+}
+
+/*Breakpoints*/
+/*___________________________*/
 
 /*900px breakpoint - 900 / 16 = 56.25em*/
 @media only screen and (max-width: 56.25em) {
