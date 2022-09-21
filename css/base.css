@@ -142,10 +142,13 @@ body {
 
 .nav__item {
   border-bottom: 1px solid #000;
+  min-height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.nav__link:hover,
-.nav__link:active {
+.nav__item:hover {
   background-color: #00000050;
 }
 
