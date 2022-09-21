@@ -1,0 +1,63 @@
+/* variables */
+
+:root {
+  --color-primary: #8a2e0f; /*Red*/
+  --color-secondary: #999900; /*Gold*/
+  --color-tertiary: #4d4d4d; /*Grey*/
+
+  --color-bg-light: #eaeaea;
+  --color-bg-dark: #000;
+}
+
+.section-white {
+  background-color: var(--color-bg-light);
+}
+.section-primary {
+  background-color: var(--color-primary);
+}
+
+.section-secondary {
+  background-color: var(--color-secondary);
+}
+
+.section-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+.text-black {
+  color: #000;
+}
+.text-white {
+  color: #fff;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+.color-secondary {
+  color: var(--color-secondary);
+}
+.color-tertiary {
+  color: var(--color-tertiary);
+}
+
+.h1-black {
+  color: #000;
+}
+.h1-white {
+  color: #fff;
+}
+
+.h2-black {
+  color: #000;
+}
+.h2-white {
+  color: #fff;
+}
+
+.h3-black {
+  color: #000;
+}
+.h3-white {
+  color: #fff;
+}

@@ -4,7 +4,7 @@ let navPartial = `
             <a class = 'nav__link--logo' href = './index.html'><span class="nav__logo">Group 2</span></a>
         </li>
         <li class = 'nav__item'>
-            <a class = 'nav__link' href = './mission.html'><span class="nav__text">Our Mission</span></a>
+            <a class = 'nav__link' href = './mission.html'><span class="nav__text">Featured Artists</span></a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './questionnaire.html'><span class="nav__text">Questionnaire</span></a>
@@ -19,7 +19,7 @@ let footerPartial = `
         <a class = 'footer__link' href = './index.html'><span class="footer__text">Home</span></a>
     </li>
     <li class = 'footer__item'>
-        <a class = 'footer__link' href = './mission.html'><span class="footer__text">Our Mission</span></a>
+        <a class = 'footer__link' href = './mission.html'><span class="footer__text">Featured Artists</span></a>
     </li>
     <li class = 'footer__item'>
         <a class = 'footer__link' href = './questionnaire.html'><span class="footer__text">Questionnaire</span></a>
