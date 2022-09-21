@@ -5,40 +5,118 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/prompt.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="./js/handlebars.min-v4.7.7.js"></script>
-    <title>Prompt</title>
+    <title>Find your complement</title>
   </head>
   <body>
     <div class="body__grid">
       <div id="nav"></div>
       <main class="page__content">
         <!-- BEGIN PAGE CONTENT -->
-        <div class="prompt__container">
-          <div class="prompt__text">
-            <h1 class="prompt__title">Let's get inspired</h1>
-            <h3 class="prompt__subtitle">
-              Generate a sample to complement your work
-            </h3>
-          </div>
-          <div class="prompt__result">
-            <span class="prompt__result--text" id="prompt-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste
-              quibusdam numquam vel, aspernatur recusandae animi veniam delectus
-              voluptates eveniet in sequi a error iure perferendis temporibus
-              commodi similique voluptatibus nesciunt sunt qui vero. Dolore
-              commodi velit nam blanditiis harum excepturi. Tempora, velit
-              alias. At suscipit non nulla animi possimus odio!
-            </span>
-            <span class="prompt__result--citation" id="prompt-citation">
-              - Lawrence Fishburn, 1978
-            </span>
-          </div>
-          <button class="prompt__btn">Generate</button>
+
+        <!-- Title segment -->
+        <div class="prompt__text">
+          <h1 class="prompt__title">Let's get inspired</h1>
+          <h3 class="prompt__subtitle">
+            Generate a sample to complement your work
+          </h3>
         </div>
+
+        
+        <!-- Forms and results -->
+        <div class="prompt__container">
+
+
+          <!-- Toggle to switch prompt -->
+          <input type="checkbox" class="prompt__control-checkbox" id="prompt-toggle">
+          <label for="prompt-toggle" class="prompt__control-label">
+          </label>
+          <span class="prompt__control-span--left">Image</span>
+          <span class="prompt__control-span--right">Writing</span>
+
+     
+          <!-- Art form and results Left -->
+          <section class="prompt-art">
+            <div class="prompt-art__form-container">
+              <form action="#" id="artForm" class="prompt-art__form">
+                <label for="text-sample" class="prompt-art__form-label"
+                  >Your text sample:</label
+                >
+                <textarea id="artInputTextarea" class="prompt-art__form-textarea" name="text-sample" id="text-sample" placeholder="..." cols="30" rows="10">
+</textarea>
+                <input type="submit" class="prompt-art__form-submit" value="Generate" id="artGenerateButton"/>
+              </form>
+            </div>
+            <div id = "artContainer" class="prompt-art__result --round-corners-all">
+              <div id="artLoaderContainer" class="prompt__spinner-container --hidden">
+                <div class="spinner"></div>
+              </div>
+                          <p id ="artResultTargetText" class="prompt-art__result-text">Please Fill in text to search a match in our database</p> 
+                          <div class = "prompt-art__result-inner" id="artResultTargetContainer">
+                            <img id="artResultImg" class= "prompt-art__result-img --hidden" src="" alt="">
+                            <h4 id="artResultTitle" class="prompt-art__result-title --hidden"></h4>
+                            <p id="artResultArtist" class="prompt-art__result-artist --hidden"></p>
+                            <p id="artResultDesc" class="prompt-art__result-desc --hidden"></p>
+                            <a id="artResultDownload" class = "prompt-art__result-download --hidden" href="#" download="#"><span class="prompt-art__result-download-text">Download</span></a>
+                          </div>
+              <div id = "artArtistHighlight" class="artist__highlight">
+                <p id = "artArtistTagline" class="artist__highlight--tagline">Made with Love By:</p>
+                <p id = "artArtistName" class="artist__highlight--name">Josh Chad</p>
+                <img id = "artArtistImg" src="./public/img/John-Chuang.jpg" alt="Artist" class="artist__highlight--img">
+                <a href="#" class="artist__highlight--link">
+                  <span class="artist__highlight--icon"> 
+                    <span class="material-symbols-outlined artist__highlight--symbol">arrow_circle_right</span>
+                    <span class="artist__highlight--more">See more from our talented members</span> 
+                  </span>  
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Writing form and results Right -->
+          <section class="prompt-write">
+            <div class="prompt-write__form-container">
+              <form action="#" class="prompt-write__form">
+                <label for="file-sample" class="prompt-write__form-label"
+                  >Generate Text From Image</label
+                >
+                <input id = "writeInputFile" type="file" class="prompt-write__form-upload" name="image-sample" id="image-sample" />
+                <input type="submit" class="prompt-write__form-submit" value="Generate" id="writeGenerateButton"/>
+              </form>
+            </div>
+            <div id ="writeContainer" class="prompt-write__result --round-corners-all">
+              <span id="writeCopy" class="prompt-write__copy --hidden">
+                <span id="writeCopySymbol" class="prompt-write__copy--symbol material-symbols-outlined">content_copy</span>
+                <span id="writeCopyText" class="prompt-write__copy--text --hidden">copied!</span>
+              </span>
+              <div id = "writeLoaderContainer" class="prompt__spinner-container --hidden">
+                <div class="spinner"></div>
+              </div>
+              <div class="prompt-write__result-text--container">
+              <p id ="writeResultTargetText" class="prompt-write__result-text--placeholder">Upload an image of your work to see written work</p>
+              <span id = "writeResultTargetCitation" class="prompt-write__result-citation --hidden">Mr. Bob</span>
+            </div>
+              <div id = "writeArtistHighlight" class="artist__highlight">
+                <p id = "writeArtistTagline" class="artist__highlight--tagline">Made with Love By:</p>
+                <p id = "writeArtistName" class="artist__highlight--name">Josh Chad</p>
+                <img id = "writeArtistImg" src="./public/img/John-Chuang.jpg" alt="Artist" class="artist__highlight--img">
+                <a href="#" class="artist__highlight--link">
+                  <span class="artist__highlight--icon"> 
+                    <span class="material-symbols-outlined artist__highlight--symbol">arrow_circle_right</span>
+                    <span class="artist__highlight--more">See more from our talented members</span> 
+                  </span>                
+                </a>
+              </div>
+            </div>
+          </section>
         <!-- END PAGE CONTENT -->
       </main>
       <div id="footer"></div>
     </div>
     <script src="./js/partials.js"></script>
+    <script src="./js/prompt-image-samples.js"></script>
+    <script src="./js/prompt-writing-samples.js"></script>
+    <script src="./js/prompt.js"></script>
   </body>
 </html>

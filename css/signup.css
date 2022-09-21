@@ -1,0 +1,218 @@
+.page__content {
+  display: grid;
+  grid-template-rows: min-content min-content;
+}
+
+/*Header*/
+/*_________________________*/
+.signup__title {
+  grid-row: 1 / span 1;
+  padding-top: 4rem;
+}
+.signup__title-heading {
+  font-size: 5rem;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.4s;
+  transform: scaleY(1);
+}
+
+.signup__title-heading--remove {
+  transform: scaleY(0);
+}
+
+.signup__form-container {
+  grid-row: 2 / span 1;
+
+  display: grid;
+  grid-template-rows: min-content min-content;
+  grid-template-columns: 1fr 1fr;
+  padding: 6rem 20vw;
+  overflow: hidden;
+}
+
+/*Page Cards*/
+/*_________________________*/
+.signup__card {
+  grid-row: 1 / span 1;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 1;
+  transform: translateX(0);
+  transition: transform 1s ease, opacity 2s ease;
+}
+.signup__card-1 {
+}
+.signup__card-2 {
+}
+.signup__card-3 {
+}
+
+/*Inputs*/
+/*_________________________*/
+.signup__group {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.signup__label {
+  align-self: start;
+  font-size: 1.8rem;
+  margin: 1rem 0;
+}
+.signup__input-text {
+  height: 5vh;
+  font-size: 1.7rem;
+  min-width: 20vw;
+}
+
+/*Page Buttons/
+/*_________________________*/
+
+.signup__page-btn-container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup__page-btn {
+  grid-row: 2 / span 1;
+  min-width: 10vw;
+  min-height: 4vh;
+  font-size: 2.1rem;
+  margin: 3rem;
+  transition: all 1s ease;
+}
+.signup__form-next {
+  grid-column: 2 / span 1;
+  justify-self: start;
+}
+
+.signup__form-next--1 {
+  width: 40%;
+  align-self: center;
+  justify-self: center;
+}
+
+.signup__form-prev {
+  grid-column: 1 / span 1;
+  justify-self: end;
+}
+
+/*Final Card */
+
+.signup__card-welcome {
+  font-size: 4rem;
+  padding-bottom: 7rem;
+  text-align: center;
+}
+
+.signup__card-line {
+  display: block;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  height: 0.1em;
+  margin: 0 2em;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 9, 0, 0.41) 0%,
+    rgba(255, 127, 0, 0.41) 50%,
+    rgba(0, 255, 0, 0.6) 100%
+  );
+  background-size: 0 10em;
+  background-position: top center;
+  background-repeat: no-repeat;
+  will-change: background-image;
+  transition: background-image 3s linear;
+}
+
+.signup__card-line--active {
+  animation: preloadLine 3s ease-out forwards;
+}
+
+.signup__card-check {
+  width: auto;
+  height: 6rem;
+  padding: 0.7em;
+  border-radius: 50%;
+  background-color: #5bd670;
+  fill: #fff;
+  margin-top: -3rem;
+  transform: scale(0);
+}
+
+.signup__card-check--active {
+  animation: preloadTic 0.8s linear forwards;
+  animation-delay: 3s;
+}
+
+.signup__card-link {
+  text-decoration: none;
+  align-self: end;
+  display: block;
+  margin: auto;
+}
+.signup__card-link--span {
+  font-size: 2rem;
+  background-color: #eaeaea;
+  padding: 1rem;
+  border-radius: 20px;
+  color: #000;
+  transition: all 0.2s;
+}
+
+.signup__card-link--span:hover {
+  color: #fff;
+  background-color: #121212;
+}
+
+/* Page Animations*/
+@keyframes preloadLine {
+  0% {
+    background-position: bottom center;
+    background-size: 0 10em;
+  }
+  100% {
+    background-position: top center;
+    background-size: 100% 10em;
+  }
+}
+
+@keyframes preloadTic {
+  0% {
+    transform: scale(0);
+  }
+  20% {
+    transform: scale(0.2);
+    animation-timing-function: ease-out;
+  }
+  50% {
+    transform: scale(1.3);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: scale(0.9);
+    animation-timing-function: ease-out;
+  }
+  80%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+/*Utility classes for this page*/
+.--off-right {
+  transform: translateX(100vw);
+  opacity: 0;
+}
+
+.--off-left {
+  transform: translateX(-100vw);
+  opacity: 0;
+}
