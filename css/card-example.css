@@ -34,7 +34,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  -webkit-backface-visibility: hidden; //Needed for Safari 9, ALWAYS USE CANIUSE.com to check
+  -webkit-backface-visibility: hidden; /*Needed for Safari 9, ALWAYS USE CANIUSE.com to check*/
   backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
