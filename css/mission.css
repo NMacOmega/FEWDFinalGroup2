@@ -57,6 +57,7 @@ iframe {
     text-transform: uppercase;
     font-weight: 300;
     margin: 2vh 0;
+    color:#f95738;
 }
 
 /* .about_subtitle {
@@ -87,19 +88,14 @@ iframe {
     margin-left: 1vw;
 }
 
-/* .header_images {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
-.header_image1 {
-    width: 250px;
-    height: auto;
-    margin: 2vw;
-} */
 img {
     border-radius: 10px;
+}
+h4 {
+    margin: 1vh;
+    
+    font-weight: 300;
 }
 
 /* Hex codes: 
