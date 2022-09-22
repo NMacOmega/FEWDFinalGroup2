@@ -103,7 +103,8 @@ h2 {
 /* NEWSLETTER SECTION */
 .newsletter-section {
   background: #0D3B66;
-  /* width: 100vw; */
+  max-height: 600px;
+  
 }
 
 .newsletter-section > h2 {
@@ -114,6 +115,7 @@ form {
   width: 400px;
   margin: 0 auto;
   text-align: center;
+  
 }
 
 #email {
@@ -132,7 +134,7 @@ form {
   font-weight: bold;
   padding: 12px 20px;
   margin-top: 40px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
 
 }
 
