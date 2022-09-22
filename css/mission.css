@@ -61,7 +61,7 @@ iframe {
     font-weight: 300;
     margin: 3vh 0;
     color:#f95738;
-    text-align: center;
+    /* text-align: center; */
 }
 
 /* .about_subtitle {
@@ -87,10 +87,14 @@ iframe {
     width: 20vw;
     height: auto;
     margin-bottom: 4vh;
-    
     text-align: center;
 }
-
+/* .nate {
+     width: 15vw;
+     height: auto;
+     margin-bottom: 4vh;
+     text-align: center;
+ } */
 
 img {
     border-radius: 5px;
@@ -116,64 +120,102 @@ i:hover {
     font-weight: 700;
 }
 .timeline{
-    width:90vw;
+    width:80vw;
     height: 20vh;
     text-align: center;
-    margin-top: 4vh;
+    margin-top: 10vh;
     
 }
 .circle1 {
-    height: 70px;
-    width: 70px; border-radius: 50%;
+    height: 20px;
+    width: 20px; border-radius: 50%;
     background-color: #0d3b66; 
     display: inline-block;
 }
+.circle1p {
+    color: #0d3b66;
+}
 .circle2 {
-    height: 70px;
-    width: 70px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     background-color: #ee964b;
     display: inline-block;
 }
+.circle2p {
+    color: #ee964b;;
+}
 .circle3 {
-    height: 70px;
-    width: 70px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
-    background-color: green;
+    background-color: red;
     display: inline-block;
 }
-.circle5 {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: #f95738;
-    display: inline-block;
+.circle3p {
+    color: red;
 }
 .circle4 {
-    height: 70px;
-    width: 70px;
+    height: 20px;
+    width: 20px;
     border-radius: 50%;
     background-color: #f4d35e;
     display: inline-block;
 }
+.circle4p {
+    color: #f4d35e;
+}
+.circle5 {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+}
+.circle5p {
+    color: green;
+}
+.circle6 {
+    height:20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #b069da;
+    display: inline-block;
+}
+.circle6p {
+    color: #b069da;
+}
 .line1 {
-    height: 1px;
-    width: 50px;
-    background-color: grey;
+    height: 2px;
+    width: 100px;
+    background-color: rgb(204, 202, 202);
     display: inline-block;
     /* margin-bottom: 30px; */
     align-self: center;
     
 }
+.line2 {
+    height: 100px;
+    margin-left: -15px;
+    display: inline-block;
+    margin-top: 30px;
+}
 .timeline_display{
     display: flex;
     justify-content: center;
+
+}
+
+.timeline_text {
+    width: 4vw;
+    height: auto;
 }
 .years1{
     color: white;
-    margin-top: 4vh;
+    margin-top: 2vh;
+    
 }
-.years2 {
-    color: black;
-    margin-top: 4vh;
+.milestones{
+    font-weight: 200;
+    font-size: .8em;
 }
