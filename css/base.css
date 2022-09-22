@@ -55,7 +55,7 @@ body {
 .body__grid {
   min-height: 100%;
   display: grid;
-  grid-auto-rows: auto 1fr auto;
+  grid-auto-rows: auto auto auto;
   grid-template-columns: 1fr;
 }
 
