@@ -13,3 +13,7 @@ FEWD '22 Final Project, Group 2.
 1. Fixed Typo on questionnaire.html (Featured Creators)
 2. Added own LinkedIn photo for use on meet the team section
 3. Adjusted nav link titles & added a link to the sign up sheet.
+4. Added drop shadows and adjusted styling on Featured Creators page.
+
+9/22 -- Katie:
+1. Updated copy across website, fixing typos and adjusting page titles. 
