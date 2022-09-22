@@ -7,7 +7,6 @@ font-family: 'Roboto Slab', serif; */
 :root {
   /* COLOR VARIABLES*/
   --color-grey: #999;
-  --color-grey-dark: hsl(10, 100%, 20%);
 
   --color-red: #f95738;
   --color-red-dark: #c42530;
@@ -41,7 +40,7 @@ font-family: 'Roboto Slab', serif; */
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* On default settings, font will be 10px instead of 16px */
-  background-color: var(--color-red-dark);
+  background-color: var(--color-red);
   /* font-family: "Nunito", sans-serif; */
   padding: 0 3rem;
 }
@@ -55,7 +54,7 @@ body {
 .body__grid {
   min-height: 100%;
   display: grid;
-  grid-auto-rows: auto 1fr auto;
+  grid-auto-rows: auto auto auto;
   grid-template-columns: 1fr;
 }
 
@@ -143,7 +142,7 @@ body {
 }
 
 .nav__item--logo {
-  background-color: var(--color-red-dark);
+  background-color: var(--color-red);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -212,7 +211,7 @@ body {
 
 .footer__copyright {
   text-align: center;
-  color: var(--color-grey-dark);
+  color: #000;
   font-size: 1rem;
 }
 
