@@ -555,15 +555,3 @@ prompt-write__result-text--container {
 .--round-corners-all {
   border-radius: 10px !important;
 }
-
-/*Need utilities for:
-
-  Fading in and perhaps changing box dimensions
-
-  Emphasizing error text
-
-  To indicate that something was indeed copied to clipboard
-
-   Push enter in text area and it breaks!!
-
-*/
