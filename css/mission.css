@@ -1,9 +1,10 @@
-/* Hex codes: 
-blue: #0d3b66;
-off-white: #faf0ca;
-yellow: #f4d35e;
-orange: #ee964b;
-red: #f95738 */
+
+  /* --color-red: #f95738;
+  --color-red-dark: #c42530;
+  --color-blue: #0d3b66;
+  --color-yellow: #f4d35e;
+  --color-orange: #ee964b;
+  --color-off-white: #faf0ca; */
 
 .about_layout {
     display: flex;
@@ -113,4 +114,66 @@ i:hover {
 .team_icons {
     font-size: .8em;
     font-weight: 700;
+}
+.timeline{
+    width:90vw;
+    height: 20vh;
+    text-align: center;
+    margin-top: 4vh;
+    
+}
+.circle1 {
+    height: 70px;
+    width: 70px; border-radius: 50%;
+    background-color: #0d3b66; 
+    display: inline-block;
+}
+.circle2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #ee964b;
+    display: inline-block;
+}
+.circle3 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: green;
+    display: inline-block;
+}
+.circle5 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f95738;
+    display: inline-block;
+}
+.circle4 {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #f4d35e;
+    display: inline-block;
+}
+.line1 {
+    height: 1px;
+    width: 50px;
+    background-color: grey;
+    display: inline-block;
+    /* margin-bottom: 30px; */
+    align-self: center;
+    
+}
+.timeline_display{
+    display: flex;
+    justify-content: center;
+}
+.years1{
+    color: white;
+    margin-top: 4vh;
+}
+.years2 {
+    color: black;
+    margin-top: 4vh;
 }
