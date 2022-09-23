@@ -9,8 +9,13 @@
 body{
      
     font-family: 'Open Sans', sans-serif; 
+    width: 90vw;
 }
 
+.hero{
+    width: 90vw;
+    height: auto;
+}
 /* header */
 .header {
     margin: 4vh;
@@ -45,6 +50,8 @@ body{
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(244, 211, 94,.2);
+    
+
   
 }
 .about_title{
@@ -59,12 +66,45 @@ body{
     font-weight: 200;
     font-size: 1.5em;
 }
-.values_headers{
-    text-align: ;
-    margin-top: 5vh;
-    color: #f95738;
-    font-weight: 600;
-    font-size: 1.2em;
+.our_values{
+    margin-top: 4vh;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    margin-top: 3vh;
+
+}
+.card_body{
+    background-color:rgba(13, 59, 102,.06);
+    height: 6vh;;
+    width: 16vw;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+.card_image {
+    width: 16vw;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;  
+}
+.values_headers,.values_headers1,.values_headers2 {
+    margin-top:0%;
+    color:green;
+    font-weight: 900;
+    font-size: 1em;
+    padding-top: 2vh;
+   
+}
+.values_headers2 {
+    color:#0d3b66;
+}
+.values_headers1 {
+    color:#b069da;
 }
 .about_text, .about_text_header{
     font-size: 1.2em;
@@ -72,16 +112,27 @@ body{
     margin-top: 1vh;
    
 }
+.about_text_mission{
+    font-size: 1.5em;
+    text-align: center;
+    font-style: italic;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    font-weight: 200;
+}
 
 .about_text_group{
     width: 40vw;
     margin:2vh auto;
 }
 iframe {
-    width: 40vw;
+    width: 55vw;
     height: 25vw;
     overflow: hidden;
     margin:2vh 1vw;
+}
+#iframe_center{
+    text-align: center;
 }
 
 /* meet our team */
@@ -94,6 +145,7 @@ iframe {
 .meet_team {
     width: 13vw;
     height: auto;
+    border-radius: 5px;
 }
 .team_block {
     width: 20vw;
@@ -101,9 +153,7 @@ iframe {
     margin-bottom: 4vh;
     text-align: center;
 }
-img {
-    border-radius: 5px;
-}
+
 h4 {
     margin: 1vh;
     font-weight: 300;
@@ -117,7 +167,7 @@ i:hover {
     color:#f95738;
 }
 #team {
-    background-color: rgba(13, 59, 102,.1);
+    background-color: rgba(13, 59, 102,.03);
     padding-top: 1vh;
 }
 .team_icons {
@@ -127,6 +177,11 @@ i:hover {
 
 
 /* timeline */
+#timeline {
+    margin-top: 5vh;
+    background-color: rgba(0, 128, 0,.05);
+    padding-top: 2vh;
+}
 .timeline{
     width:80vw;
     height: 25vh;
@@ -197,12 +252,11 @@ i:hover {
     width: 100px;
     background-color: rgb(204, 202, 202);
     display: inline-block;
-    /* margin-bottom: 30px; */
     align-self: center;
 }
 .line2 {
     height: 100px;
-    margin-left: -15px;
+    
     display: inline-block;
     margin-top: 30px;
 }
