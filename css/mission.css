@@ -6,12 +6,31 @@
   --color-orange: #ee964b;
   --color-off-white: #faf0ca; */
 
+body{
+     
+    font-family: 'Open Sans', sans-serif; 
+}
+
+/* header */
+.header {
+    margin: 4vh;
+}
+.about_text_header{
+    margin-right: 3vw;
+}
+.text_highlight{
+    color: #f95738;
+    font-size: 1.1em;
+    margin-bottom: 1vh;
+    margin-top: 1vh;
+}
+
+
 .about_layout {
     display: flex;
     flex-direction: row;
-    font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
     text-align: center;
+    overflow: hidden;
 }
 .about_main {
     min-height: 60vh;
@@ -21,10 +40,11 @@
 }
 
 
-/* mission/video */
+/* values/video */
 .about_video_layout{
     display: flex;
     flex-wrap: wrap;
+    background-color: rgba(244, 211, 94,.2);
   
 }
 .about_title{
@@ -39,11 +59,20 @@
     font-weight: 200;
     font-size: 1.5em;
 }
-.about_text{
+.values_headers{
+    text-align: ;
+    margin-top: 5vh;
+    color: #f95738;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+.about_text, .about_text_header{
     font-size: 1.2em;
     margin-bottom: 1vh;
     margin-top: 1vh;
+   
 }
+
 .about_text_group{
     width: 40vw;
     margin:2vh auto;
@@ -88,7 +117,7 @@ i:hover {
     color:#f95738;
 }
 #team {
-    background-color: #faf9f6;
+    background-color: rgba(13, 59, 102,.1);
     padding-top: 1vh;
 }
 .team_icons {
@@ -102,7 +131,7 @@ i:hover {
     width:80vw;
     height: 25vh;
     text-align: center;
-    margin-top: 10vh;
+    margin-top: 8vh;
 }
 .circle1 {
     height: 20px;
