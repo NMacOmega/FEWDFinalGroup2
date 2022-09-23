@@ -135,6 +135,12 @@ iframe {
     text-align: center;
 }
 
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 /* meet our team */
 .meet_team_sections {
     display: flex;
