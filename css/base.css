@@ -146,7 +146,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  /* padding: 2rem; */
+}
+
+.nav__link--logo {
+  width: 100%;
 }
 
 .nav__logo {
@@ -213,6 +217,75 @@ body {
   text-align: center;
   color: #000;
   font-size: 1rem;
+}
+
+/*Logo SVG*/
+.logo__svg--wrapper {
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-content {
+}
+
+.logo__svg {
+  transform: scale(0.75);
+}
+
+.logo__svg--part {
+}
+.logo__svg--bg {
+  fill: #000;
+}
+.logo__svg--highlight {
+  fill: transparent;
+}
+/*Pencil Eraser Band*/
+.logo__svg--highlight-1 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Top*/
+.logo__svg--highlight-2 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Top*/
+.logo__svg--highlight-3 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Top*/
+.logo__svg--highlight-4 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Bottom*/
+.logo__svg--highlight-5 {
+  /*   fill:transparent; */
+}
+/*Paintbrush Band*/
+.logo__svg--highlight-6 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Bottom*/
+.logo__svg--highlight-7 {
+  /*   fill: transparent; */
+}
+/*Pen Tip Hole*/
+.logo__svg--highlight-8 {
+  /*   fill: transparent; */
+}
+/*Pencil Body Body*/
+.logo__svg--highlight-9 {
+  /*   fill: transparent; */
+}
+/*Pencil Tip*/
+.logo__svg--highlight-10 {
+  /*   fill: transparent; */
+}
+/* Pen tip*/
+.logo__svg--highlight-11 {
+  /*   fill: transparent; */
 }
 
 /*Common Components*/
