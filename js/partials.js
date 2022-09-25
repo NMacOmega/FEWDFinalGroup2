@@ -1,7 +1,11 @@
 let navPartial = `
     <ul class= 'nav__list'>
         <li class = 'nav__item--logo'>
-            <a class = 'nav__link--logo' href = './index.html'><span id="logo" class="nav__logo"></span></a>
+            <a class = 'nav__link--logo' href = './index.html'>
+            <span class="nav__logo--text">Fine Art</span>
+            <span id="logo" class="nav__logo"></span>
+            <span class="nav__logo--text">Fusion</span>
+            </a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './mission.html'><span class="nav__text">About Us</span></a>
