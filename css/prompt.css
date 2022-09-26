@@ -233,20 +233,19 @@
 .prompt-write__result {
   position: relative;
   min-height: 150px;
-}
-
-.prompt-art__result {
-  margin: auto;
+  align-self: start;
+  margin: 0 auto;
   width: 80%;
   padding: 3rem;
-  position: relative;
-
-  background-image: var(--dark-gradient);
   border-radius: 10px 10px 0 0;
+  background-image: var(--dark-gradient);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.prompt-art__result {
 }
 .prompt-art__result-text {
   color: #fff;
@@ -325,32 +324,41 @@
 /*Write Result*/
 /*___________________________*/
 .prompt-write__result {
-  width: 100%;
-  background-image: var(--dark-gradient);
-  border-radius: 10px 10px 0 0;
-  margin: 0 auto;
-  padding: 2.2rem 1rem;
-  position: relative;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 95%;
+  padding-top: 8rem;
 }
 
 .prompt-write__copy {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  cursor: pointer;
-  color: white;
-  margin: 0.5rem;
-  padding: 0.5rem;
+  background-color: hsla(10, 10%, 30%, 1);
   border-radius: 8px;
+  padding: 1rem;
 }
 
-.prompt-write__copy:hover {
-  background-color: pink;
+.prompt-write__copy--symbol:hover {
+  background-color: var(--color-red);
   color: #000;
+}
+
+.prompt-write__copy--symbol {
+  font-size: 4rem !important;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.prompt-write__copy--text {
+  color: #fff;
+  font-size: 2rem;
+  margin: 1.8rem 1rem 1.8rem 0;
+  cursor: pointer;
 }
 
 prompt-write__result-text--container {

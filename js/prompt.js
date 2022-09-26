@@ -1,7 +1,19 @@
-console.log("hello there");
-console.log(imageSources);
-console.log(writingSources);
-/* Grab page elements */
+const randomPlaceholders = [
+  "Pen down your thoughts",
+  "Write your masterpiece",
+  "Give us a prompt",
+  "Let us complement your words",
+];
+const randomArtistTags = [
+  "Made with love by:",
+  "Produced by:",
+  "A genius piece by:",
+  "This is a work of:",
+];
+
+/* Set up search index tools*/
+const imageSearchIndex = createSearchIndex(imageSources);
+const writingSearchIndex = createSearchIndex(writingSources);
 
 /* Elements for Art Form */
 let artContainer = document.getElementById("artContainer");
@@ -32,21 +44,23 @@ let writeResultCopyText = document.getElementById("writeCopyText");
 let artArtistHighlightContainer = document.getElementById("artArtistHighlight");
 let artArtistHighlightTagline = document.getElementById("artArtistTagline");
 let artArtistHighlightName = document.getElementById("artArtistName");
-let artArtistHighlightImg = document.getElementById("artArtistHighImg");
+let artArtistHighlightImg = document.getElementById("artArtistImg");
 let writeArtistHighlightContainer = document.getElementById(
   "writeArtistHighlight"
 );
 let writeArtistHighlightTagline = document.getElementById("writeArtistTagline");
 let writeArtistHighlightName = document.getElementById("writeArtistName");
-let writeArtistHighlightImg = document.getElementById("writeArtistHighImg");
+let writeArtistHighlightImg = document.getElementById("writeArtistImg");
 
 /* Event listeners*/
 artGenerateButton.addEventListener("click", generateArt);
 writeGenerateButton.addEventListener("click", generateWriting);
 writeResultCopySpan.addEventListener("click", copyToClipboard);
+writeInputFile.addEventListener("change", generateWriting);
 
 /*Startup actions for a unique experience*/
-artInputTextarea.placeholder = "Hello There";
+artInputTextarea.placeholder =
+  randomPlaceholders[generateRandom(0, randomPlaceholders.length - 1)];
 
 /* Utility functions to show elements and copy text*/
 function addClass(className, elems) {
@@ -115,17 +129,31 @@ function generateArt(e) {
   ]);
   remClass("--hidden", [artLoaderContainer]);
 
-  var art = getArtFromWritingSample(artInputTextarea.value);
+  var art = getSample({
+    text: artInputTextarea.value,
+    source: imageSources,
+    index: imageSearchIndex,
+  });
   console.log(art);
+
   if (art && art.link) {
     artResultTargetImg.src = art.link;
-    artResultTargetImg.alt = art.alt;
+    artResultTargetImg.alt = art.description;
+
+    artInputTextarea.placeholder =
+      randomPlaceholders[generateRandom(0, randomPlaceholders.length - 1)];
+
+    artArtistHighlightImg.src = art.artist_link;
+    artArtistHighlightTagline.textContent =
+      randomArtistTags[generateRandom(0, randomArtistTags.length - 1)];
+    artArtistHighlightName.textContent = art.artist;
     artResultTargetTitle.textContent = art.title;
     artResultTargetArtist.textContent = art.artist;
+
     artResultTargetDesc.textContent = art.description;
     artResultTargetText.textContent = "Here is your image!";
     artResultTargetDownload.href = art.link;
-    artResultTargetDownload.download = art.downloadName;
+    artResultTargetDownload.download = art.filename;
 
     setTimeout(() => {
       remClass("--round-corners-all", [artContainer]);
@@ -184,11 +212,20 @@ function generateWriting(e) {
     return;
   }
 
-  /*Create Writing Magic */
-  var literature = getWritingFromArtSample(writeInputFile.value);
+  var literature = getSample({
+    text: writeInputFile.value,
+    source: writingSources,
+    index: writingSearchIndex,
+  });
+
   if (literature && literature.text) {
     writeResultTargetText.textContent = literature.text;
     writeResultTargetCitation.textContent = literature.citation;
+
+    writeArtistHighlightImg.src = literature.artist_link;
+    writeArtistHighlightName.textContent = literature.artist;
+    writeArtistHighlightTagline.textContent =
+      randomArtistTags[generateRandom(0, randomArtistTags.length - 1)];
 
     setTimeout(() => {
       remClass("--hidden", [
@@ -215,25 +252,61 @@ function generateWriting(e) {
 
 /*Background functions to convert input into images and text*/
 
-function getArtFromWritingSample(textInput) {
-  console.log(textInput);
-  var result = {
-    link: "./public/img/prompt-results/four.jpg",
-    alt: "Lovely image",
-    artist: "Amy Musgraves",
-    title: "Beautiful picture",
-    description: "Pure Beauty",
-    downloadName: "Name_of_file",
-  };
-  return result;
+function createSearchIndex(source) {
+  if (!source || Object.entries(source).length < 1) return {};
+
+  let sourceIndex = {};
+
+  Object.entries(source).map(([idx, entry]) => {
+    entry.tags.map((tag) => {
+      if (sourceIndex[tag]) {
+        sourceIndex[tag].push(idx);
+      } else {
+        sourceIndex[tag] = [idx];
+      }
+    });
+  });
+  return sourceIndex;
 }
 
-function getWritingFromArtSample(filestring) {
-  console.log(filestring);
-  var result = {
-    text: "Hello there",
-    citation: "Obi-Wan Kenobi, Star Wars Revenge of the Sith",
-  };
+function getSample(params) {
+  const { text: textInput, source: sourceGroup, index: sourceIndex } = params;
 
-  return result;
+  console.log(sourceGroup);
+  console.log(sourceIndex);
+
+  let sourceResults = [];
+
+  Object.entries(sourceIndex).map(([term, sources]) => {
+    console.log(term);
+    console.log(sources);
+
+    var re = new RegExp(term, "gi");
+    if (textInput.match(re)) sourceResults = [...sourceResults, ...sources];
+  });
+
+  console.log(sourceResults);
+
+  if (sourceResults.length <= 0) return null;
+
+  let finalInd = generateRandom(0, sourceResults.length - 1);
+  let finalSource = sourceResults[finalInd][0];
+  console.log(finalSource);
+  return sourceGroup[finalSource];
+}
+
+function generateRandom(min = 0, max = 100) {
+  // find diff
+  let difference = max - min;
+
+  // generate random number
+  let rand = Math.random();
+
+  // multiply with difference
+  rand = Math.floor(rand * difference);
+
+  // add with min value
+  rand = rand + min;
+
+  return rand;
 }
