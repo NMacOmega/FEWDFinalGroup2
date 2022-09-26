@@ -19,6 +19,12 @@
   /* FONT SIZES */
 
   --size-font-default: 1.2rem;
+  --font-size-heading: clamp(1.4rem, 6vw, 4rem);
+  --font-size-welcome: clamp(1.4rem, 6vw, 4rem);
+  --font-size-link: clamp(1.4rem, 6vw, 2rem);
+  --font-size-label: clamp(1.4rem, 3vw, 2rem);
+  --font-size-input-text: clamp(1.8rem, 3vw, 2rem);
+  --font-size-button: clamp(1.8rem, 3vw, 2rem);
 }
 
 /* Global Reset */
