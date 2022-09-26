@@ -17,3 +17,8 @@ FEWD '22 Final Project, Group 2.
 
 9/22 -- Katie:
 1. Updated copy across website, fixing typos and adjusting page titles. 
+2. Added stock image for possible logo to img directory.
+
+9/26 -- Katie:
+1. fixed path for Tanesha's Meet Our Staff photo to prevent an error. 
+2. Adjusted Nathaniel's Meet Our Staff photo to match specs of the other images in that row. 
