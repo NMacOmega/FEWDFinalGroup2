@@ -1,10 +1,5 @@
 //Class Definitions for Key Elements
-const pageClasses = [
-  "signup__card-1",
-  "signup__card-2",
-  "signup__card-3",
-  "signup__card-final",
-];
+const pageClasses = ["signup__card-1", "signup__card-2", "signup__card-final"];
 
 const pageTitleClass = "signup__title-heading";
 const pageTitleRemoveClass = "signup__title-heading--remove";
@@ -24,6 +19,7 @@ const lineClass = "signup__card-line";
 const checkClass = "signup__card-check";
 const animateLineClass = "signup__card-line--active";
 const animateCheckClass = "signup__card-check--active";
+const exitLinkClass = "signup__card-link";
 
 /*Grab signup pages*/
 const pages = pageClasses.reduce(
@@ -60,6 +56,8 @@ function processNextPrev(e, direction) {
       pages[pageIndex].classList.add(shiftNextClass);
       pages[pageIndex - 1].classList.remove(shiftPrevClass);
       pageIndex--;
+      console.log(pages[pageIndex]);
+      focusOnFirstInput(pages[pageIndex]);
       return;
 
     case "next":
@@ -67,16 +65,25 @@ function processNextPrev(e, direction) {
       pages[pageIndex].classList.add(shiftPrevClass);
       pages[pageIndex + 1].classList.remove(shiftNextClass);
       pageIndex++;
-      if (pageIndex == maxPages - 1) onFinish();
+      if (pageIndex == maxPages - 1) return onFinish();
+      focusOnFirstInput(pages[pageIndex]);
       return;
   }
 }
 
+function focusOnFirstInput(page) {
+  const thisInput = page.getElementsByClassName("form__input")[0];
+  setTimeout(() => {
+    thisInput.focus();
+  }, 1000);
+}
+
 function onFinish() {
-  const firstName = document.getElementsByName("fname")[0].value;
+  const pseudonym = document.getElementsByName("lname")[0].value;
+  console.log(document.getElementsByName("lname"));
   document.getElementsByClassName(
     titleClass
-  )[0].textContent = `Welcome to the club,\n ${firstName}!`;
+  )[0].textContent = `Welcome to the club,\n ${pseudonym}!`;
 
   document
     .getElementsByClassName(pageTitleClass)[0]
@@ -86,4 +93,8 @@ function onFinish() {
   document
     .getElementsByClassName(checkClass)[0]
     .classList.add(animateCheckClass);
+
+  setTimeout(() => {
+    document.getElementsByClassName(exitLinkClass)[0].focus();
+  }, 1000);
 }

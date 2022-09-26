@@ -116,6 +116,13 @@
   height: 100%;
   width: 100%;
 }
+
+.signup__card-link:focus,
+.signup__card-link:focus-visible {
+  outline: none;
+  outline-offset: 0;
+}
+
 .signup__card-link--span {
   font-size: var(--font-size-link);
   background-color: #eaeaea;
@@ -140,6 +147,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  margin-bottom: 2rem;
 }
 
 .signup__label {
@@ -196,7 +204,8 @@
   justify-self: center;
 }
 
-.signup__form-prev {
+.signup__form-prev--2 {
+  order: -1;
 }
 
 /* Page Animations*/
