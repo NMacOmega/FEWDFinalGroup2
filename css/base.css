@@ -8,7 +8,7 @@
   --color-red-dark: #c42530;
   --color-blue: #0d3b66;
   --color-yellow: #f4d35e;
-  --color-orange: #ee964b;
+  --color-orange: #f08441;
   --color-off-white: #faf0ca;
 
   /* FONT VARIABLES */
@@ -19,6 +19,12 @@
   /* FONT SIZES */
 
   --size-font-default: 1.2rem;
+  --font-size-heading: clamp(1.4rem, 6vw, 4rem);
+  --font-size-welcome: clamp(1.4rem, 6vw, 4rem);
+  --font-size-link: clamp(1.4rem, 6vw, 2rem);
+  --font-size-label: clamp(1.4rem, 3vw, 2rem);
+  --font-size-input-text: clamp(1.8rem, 3vw, 2rem);
+  --font-size-button: clamp(1.8rem, 3vw, 2rem);
 }
 
 /* Global Reset */
@@ -146,15 +152,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .nav__link--logo {
   display: flex;
   align-items: center;
+  
 }
 
 .nav__logo--text {
-  color: #fff;
+  color: var(--color-blue);
   font-size: 1.2rem;
   font-family: var(--font-serif);
   white-space: nowrap;
