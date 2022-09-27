@@ -45,7 +45,7 @@ interactions:
 ### Get Image from Text Form (Left Form)[^1]
 
 | Type any of these words                                                             | Resulting Image                                                   |
-| ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| :-----------------------------------------------------------------------------------: | ----------------------------------------------------------------- |
 | abstract<br />acrylic<br />art<br />color                                           | acrylic_paint_21_steve-johnson.jpg                                |
 | war<br />europe<br />blood<br />death<br />expansion<br />battle<br />hundwardsland | battle_of_hundwardsland_Jans_von_Loydor.jpg                       |
 | birds<br />boston<br />animal<br />warbler<br />tracing<br />spring<br />light      | boston-public-library_speckled_warblers_lawrence_mcrackenbire.jpg |
