@@ -1,18 +1,17 @@
-
 .card__grid {
   display: grid;
   grid-template-columns: repeat(3, 24vw);
   grid-column-gap: 6vw;
   justify-content: center;
   padding: 3rem 0;
-  padding-bottom: 180px; 
+  padding-bottom: 180px;
 }
 
 .card {
   perspective: 150rem;
   -moz-perspective: 150rem;
   height: 52rem;
-  font-family: 'Montserrat'; 
+  font-family: "Montserrat";
 }
 
 .card:hover .card__side--front {
@@ -38,7 +37,6 @@
   backface-visibility: hidden;
   border-radius: 5px;
   overflow: hidden;
-  
 }
 
 /*Front of Card*/
@@ -95,7 +93,7 @@
 }
 .card__artist-desc {
   color: #0d3b66;
-  font-size: 1.4rem; 
+  font-size: 1.4rem;
   width: 75%;
 }
 
@@ -104,7 +102,7 @@
   transform: rotateY(180deg);
   justify-content: space-between;
   padding: 6rem 0;
-  background:#f4d35e;
+  background: #f4d35e;
 }
 
 .card__work-img {
@@ -146,7 +144,6 @@
   background-color: transparent;
   cursor: pointer;
   transition: margin-left 0.2s;
-
 }
 
 .card__work-link {
@@ -179,7 +176,6 @@
   color: #fff;
 }
 
-
 /* .card__work-link-2:hover {
   background-color: hsla(10, 100%, 0%, 1);
 }
@@ -201,3 +197,14 @@
 .card__work-link-3:hover .card__work-link--text-3 {
   color: #fff;
 } */
+
+@media only screen and (max-width: 62.5em) {
+  .card__grid {
+    grid-template-columns: 60%;
+    grid-auto-rows: min-content;
+  }
+
+  .card {
+    margin: 2rem 0;
+  }
+}

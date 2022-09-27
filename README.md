@@ -24,3 +24,4 @@ FEWD '22 Final Project, Group 2.
 2. Adjusted Nathaniel's Meet Our Staff photo to match specs of the other images in that row. 
 3. Adjusted filename for featured page & adjusted nav information to remove nav errors.
 4. Attempted to adjust responsiveness of featured page, to no real avail. 
+5. Nathaniel adjusted the responsiveness of the featured page, resolving the errors! Thank you :D

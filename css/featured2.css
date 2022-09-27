@@ -45,9 +45,9 @@ h2 {
   width: 60%;
   text-align: center;
   /* margin-right: 200px;
-  margin-left: 300px;
-  margin-top: 20px;
-  margin-bottom: 20px; */
+    margin-left: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px; */
 }
 
 .text2 > p > a {
@@ -115,8 +115,8 @@ h2 {
   flex-direction: row;
   justify-content: center;
   /* display: flex;
-        justify-content: right;
-        margin-right: 60px; */
+          justify-content: right;
+          margin-right: 60px; */
 }
 
 .artistimg {

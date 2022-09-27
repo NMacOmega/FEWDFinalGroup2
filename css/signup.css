@@ -1,14 +1,14 @@
 /*Variables for this page*/
 /*_________________________*/
 
-:root {
+/* :root {
   --font-size-heading: clamp(1.4rem, 6vw, 4rem);
   --font-size-welcome: clamp(1.4rem, 6vw, 4rem);
   --font-size-link: clamp(1.4rem, 6vw, 2rem);
   --font-size-label: clamp(1.4rem, 3vw, 2rem);
   --font-size-input-text: clamp(1.8rem, 3vw, 2rem);
   --font-size-button: clamp(1.8rem, 3vw, 2rem);
-}
+} */
 
 .page__content {
   display: grid;
@@ -152,27 +152,27 @@
 
 .signup__label {
   align-self: start;
-  font-size: var(--font-size-label);
-  margin: 1rem 0;
+  /* font-size: var(--font-size-label);
+  margin: 1rem 0; */
 }
 .signup__input-text {
-  height: 5rem;
+  /* height: 5rem;
   font-size: var(--font-size-input-text);
   width: 30vw;
   padding-left: 3vw;
-  border-radius: 8px;
+  border-radius: 8px; */
 }
 
 .signup__input-dropdown {
-  width: 30vw;
+  /* width: 30vw;
   height: 5rem;
   border-radius: 8px;
   padding-left: 1vw;
-  font-size: var(--font-size-input-text);
+  font-size: var(--font-size-input-text); */
 }
 
 .signup__input-dropdown > option {
-  font-size: 2rem;
+  /* font-size: 2rem; */
 }
 
 /*Page Buttons/
@@ -187,13 +187,13 @@
 
 .signup__page-btn {
   grid-row: 2 / span 1;
-  min-width: 10vw;
+  /* min-width: 10vw;
   min-height: 4vh;
   font-size: var(--font-size-button);
   margin: 3rem;
   padding: 1.4rem;
   border-radius: 8px;
-  transition: all 1s ease;
+  transition: all 1s ease; */
 }
 .signup__form-next {
 }
@@ -258,7 +258,7 @@
 /*Breakpoints*/
 
 /*650 breakpoint 650/16 */
-@media only screen and (max-width: 40.625em) {
+/* @media only screen and (max-width: 40.625em) {
   .signup__input-text {
     width: 70vw;
   }
@@ -266,19 +266,16 @@
   .signup__input-dropdown {
     width: 70vw;
   }
-}
+} */
 
 /*___________________________*/
 /*500px breakpoint  500/16 = 31.25*/
 @media only screen and (max-width: 31.25em) {
-  .signup__page-btn {
+  /* .signup__page-btn {
     min-width: 30vw;
     min-height: 5vh;
     margin: 3rem 3vw;
-  }
-
-  .signup__card-link {
-  }
+  } */
 
   .signup__card-link--span {
     min-width: 60vw;
