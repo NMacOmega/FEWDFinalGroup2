@@ -13,12 +13,12 @@ body {
 .hero-container {
   display: flex;
   flex-direction: row;
-  height: 90vh;
+  
 }
 .heroimg-a {
   align-self: flex-start;
   width: 30vw;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .heroimg-a > img {
   width: 25vw;
@@ -26,6 +26,8 @@ body {
 }
 .heroimg-b {
   align-self: flex-end;
+  margin-bottom: 40px;
+  margin-top: 160px;
 }
 
 .heroimg-b > img {
@@ -38,6 +40,7 @@ body {
   align-self: center;
   text-align: center;
   width: 40vw;
+  margin-top: 160px;
 }
 
 .hero-text > h1 {
@@ -53,6 +56,7 @@ body {
   font-size: 1.7em;
   font-weight: bold;
   border-radius: 3px;
+  margin-bottom: 160px;
 }
 
 .hero-text > button:hover {
@@ -172,3 +176,66 @@ form {
   font-family: "Roboto Slab", serif;
   font-size: 3rem;
 } */
+
+@media only screen and (max-width: 1000px) {
+  .description-section > p {
+    font-size: 1.6em;
+    width: 75%;
+    min-height: 60vh;
+    padding: 120px 0;
+    line-height: 40px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .hero-container {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .heroimg-a {
+    align-self: center;
+    width: 50%;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+  .heroimg-a > img {
+    width: 40vw;
+  }
+  .heroimg-b {
+    align-self: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    width: 30%;
+  }
+  
+  .heroimg-b > img {
+    width: 40vw;
+    padding-right: 50px;
+  }
+  
+  .hero-text {
+    width: 70vw;
+    margin-top: 20px;
+  }
+  
+  .hero-text > h1 {
+    font-size: 2.5em;
+  }
+  
+  .hero-text > button {
+    margin-bottom: 40px;
+    font-size: 1.3em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  #submit {
+    font-size: 1.2em;
+  }
+
+}
