@@ -8,7 +8,7 @@ let navPartial = `
             </a>
         </li>
         <li class = 'nav__item'>
-            <a class = 'nav__link' href = './mission.html'><span class="nav__text">About Us</span></a>
+            <a class = 'nav__link' href = './aboutus.html'><span class="nav__text">About Us</span></a>
         </li>
         <li class = 'nav__item'>
             <a class = 'nav__link' href = './questionnaire.html'><span class="nav__text">Featured Creators</span></a>
@@ -26,7 +26,7 @@ let footerPartial = `
         <a class = 'footer__link' href = './index.html'><span class="footer__text">Home</span></a>
     </li>
     <li class = 'footer__item'>
-        <a class = 'footer__link' href = './mission.html'><span class="footer__text">About Us</span></a>
+        <a class = 'footer__link' href = './aboutus.html'><span class="footer__text">About Us</span></a>
     </li>
     <li class = 'footer__item'>
         <a class = 'footer__link' href = './questionnaire.html'><span class="footer__text">Featured Creators</span></a>
