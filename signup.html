@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <script src="./js/handlebars.min-v4.7.7.js"></script>
     <title>Join our talented community</title>
   </head>
@@ -21,56 +22,62 @@
         <div class="signup__form-container">
           <form action="#" name="page1" class="signup__card signup__card-1">
             <div class="signup__group">
-              <label for="fname" class="signup__label">Real Name</label>
+              <label for="fname" class="form__label signup__label"
+                >Real Name</label
+              >
               <input
                 type="text"
                 name="fname"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
             <div class="signup__group">
-              <label for="lname" class="signup__label"
+              <label for="lname" class="form__label signup__label"
                 >Screen Name / <br />Pseudonym</label
               >
               <input
                 type="text"
                 name="lname"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
             <div class="signup__group">
-              <label for="email" class="signup__label">Email Address</label>
+              <label for="email" class="form__label signup__label"
+                >Email Address</label
+              >
               <input
                 type="email"
                 name="email"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
             <div class="signup__group">
-              <label for="pw" class="signup__label">Password</label>
+              <label for="pw" class="form__label signup__label">Password</label>
               <input
                 type="password"
                 name="pw"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
             <div class="signup__group">
-              <label for="pwhint" class="signup__label">Password hint</label>
+              <label for="pwhint" class="form__label signup__label"
+                >Password hint</label
+              >
               <input
                 type="text"
                 name="pwhint"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
             <div class="signup__page-btn-container">
               <input
                 type="submit"
-                class="signup__page-btn signup__form-next signup__form-next--1"
+                class="signup__page-btn form__btn signup__form-next signup__form-next--1"
                 value="Next"
               />
             </div>
@@ -82,11 +89,13 @@
             class="signup__card signup__card-2 --off-right"
           >
             <div class="signup__group">
-              <label for="country" class="signup__label">Your profession</label>
+              <label for="country" class="form__label signup__label"
+                >Your profession</label
+              >
               <select
                 id="country"
                 name="country"
-                class="form__input signup__input-dropdown"
+                class="form__input form__input-dropdown signup__input-dropdown"
                 required
               >
                 <option>Choose...</option>
@@ -96,13 +105,13 @@
               </select>
             </div>
             <div class="signup__group">
-              <label for="genre" name="genre" class="signup__label"
+              <label for="genre" name="genre" class="form__label signup__label"
                 >Preferred Genre / <br />Medium</label
               >
               <input
                 type="text"
                 name="state"
-                class="form__input signup__input-text"
+                class="form__input form__input-text signup__input-text"
                 required
               />
             </div>
@@ -110,49 +119,16 @@
             <div class="signup__page-btn-container">
               <input
                 type="submit"
-                class="signup__page-btn signup__form-next signup__form-next--2"
+                class="signup__page-btn form__btn signup__form-next signup__form-next--2"
                 value="Finish"
               />
               <input
                 type="submit"
-                class="signup__page-btn signup__form-prev signup__form-prev--2"
+                class="signup__page-btn form__btn signup__form-prev signup__form-prev--2"
                 value="Previous"
               />
             </div>
           </form>
-
-          <!-- <form action="#" class="signup__card signup__card-3 --off-right">
-            <div class="signup__group">
-              <label for="fname" class="signup__label">Favorite Art</label>
-              <input type="text" name="fname" class="signup__input-text" />
-            </div>
-            <div class="signup__group">
-              <label for="lname" name="lname" class="signup__label"
-                >Favorite Music</label
-              >
-              <input type="text" name="lname" class="signup__input-text" />
-            </div>
-            <div class="signup__group">
-              <label for="email" class="signup__label">Favorite Movie</label>
-              <input type="email" name="email" class="signup__input-text" />
-            </div>
-            <div class="signup__group">
-              <label for="pw" class="signup__label">Hello there</label>
-              <input type="password" name="pw" class="signup__input-text" />
-            </div>
-            <div class="signup__page-btn-container">
-              <input
-                type="submit"
-                class="signup__page-btn signup__form-prev signup__form-prev--3"
-                value="Previous"
-              />
-              <input
-                type="submit"
-                class="signup__page-btn signup__form-next signup__form-next--3"
-                value="Finish"
-              />
-            </div>
-          </form> -->
 
           <div class="signup__card signup__card-final --off-right">
             <h1 class="signup__card-welcome">Congratulations!</h1>
