@@ -22,3 +22,5 @@ FEWD '22 Final Project, Group 2.
 9/26 -- Katie:
 1. fixed path for Tanesha's Meet Our Staff photo to prevent an error. 
 2. Adjusted Nathaniel's Meet Our Staff photo to match specs of the other images in that row. 
+3. Adjusted filename for featured page & adjusted nav information to remove nav errors.
+4. Attempted to adjust responsiveness of featured page, to no real avail. 

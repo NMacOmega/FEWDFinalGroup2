@@ -178,6 +178,15 @@ body {
     grid-auto-rows: 1fr;
   }
 
+  .nav__item--logo {
+    background-color: var(--color-blue);
+    
+  }
+
+  .nav__item--text {
+    color: var(--color-off-white);
+  }
+
   .nav__item {
     
   }
