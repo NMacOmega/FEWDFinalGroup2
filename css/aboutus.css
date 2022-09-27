@@ -12,7 +12,7 @@ body{
 }
 
 .hero{
-    width: 96vw;
+    width: 100%;
     height: auto;
 }
 /* header */
@@ -140,7 +140,10 @@ iframe {
 .socials{
     display: flex;
     justify-content: space-evenly;
-    
+    border-top: solid 1px rgb(221, 219, 219);
+    border-bottom: solid 1px grey;
+    padding: vh 0;
+    margin: 4vh 0; 
 }
 /* meet our team */
 .meet_team_sections {
@@ -188,6 +191,7 @@ i:hover {
     margin-top: 5vh;
     background-color: rgba(0, 128, 0,.05);
     padding-top: 2vh;
+    display:inline-block;
 }
 .timeline{
     width:80vw;
@@ -263,7 +267,6 @@ i:hover {
 }
 .line2 {
     height: 100px;
-    
     display: inline-block;
     margin-top: 30px;
 }
@@ -283,5 +286,6 @@ i:hover {
 .milestones{
     font-weight: 200;
     font-size: .8em;
+    margin-right: 5vw;
 }
 
