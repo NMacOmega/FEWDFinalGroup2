@@ -10,11 +10,11 @@ body{
     font-family: 'Open Sans', sans-serif; 
     
 }
-
 .hero{
     width: 100%;
     height: auto;
 }
+
 /* header */
 .header {
     margin: 4vh;
@@ -25,11 +25,7 @@ body{
 .text_highlight{
     color: #f95738;
     font-size: 1.1em;
-    margin-bottom: 1vh;
-    margin-top: 1vh;
 }
-
-
 .about_layout {
     display: flex;
     flex-direction: row;
@@ -43,20 +39,16 @@ body{
 }
 
 
-/* values/video */
+/* values */
 .about_video_layout{
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(244, 211, 94,.2);
-    
-
-  
+    background-color: rgba(244, 211, 94,.2); 
 }
 .about_title{
     text-transform: uppercase;
     font-weight: 200;
     font-size: 1.5em;
-  
 }
 .title_color{
     color:#f95738;
@@ -64,17 +56,14 @@ body{
     font-weight: 200;
     font-size: 1.5em;
 }
-.our_values{
-    margin-top: 4vh;
-}
 .cards{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 6vh;
 }
 .card{
     display: flex;
     margin-top: 3vh;
-
 }
 .card_body{
     background-color:rgba(13, 59, 102,.06);
@@ -126,25 +115,31 @@ body{
     width: 40vw;
     margin:2vh auto;
 }
-iframe {
-    width: 55vw;
-    height: 25vw;
-    overflow: hidden;
-    margin:2vh 1vw;
-}
-#iframe_center{
-    text-align: center;
-}
 
+
+/* connect */
+ form {
+    display:block;
+    flex-wrap: wrap;
+}
+#checkboxes{
+    display: flex;
+    justify-content: center;
+}
+.checkboxes{
+    text-align: left;
+}
 
 .socials{
     display: flex;
     justify-content: space-evenly;
     border-top: solid 1px rgb(221, 219, 219);
     border-bottom: solid 1px grey;
-    padding: vh 0;
+    padding: 2vh 0;
     margin: 4vh 0; 
 }
+
+
 /* meet our team */
 .meet_team_sections {
     display: flex;
@@ -188,16 +183,13 @@ i:hover {
 
 /* timeline */
 #timeline {
-    margin-top: 5vh;
-    background-color: rgba(0, 128, 0,.05);
-    padding-top: 2vh;
     display:inline-block;
 }
 .timeline{
     width:80vw;
     height: 25vh;
     text-align: center;
-    margin-top: 8vh;
+    margin-top: 5vh;
 }
 .circle1 {
     height: 20px;
@@ -279,13 +271,11 @@ i:hover {
     width: 4vw;
     height: auto;
 }
-.years1{
-    color: white;
-    margin-top: 2vh;
-}
+
 .milestones{
     font-weight: 200;
     font-size: .8em;
-    margin-right: 5vw;
+    text-align: left;
 }
+
 
