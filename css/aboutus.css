@@ -1,21 +1,26 @@
+  /* --color-grey: #999;
 
-  /* --color-red: #f95738;
+  --color-red: #f95738;
   --color-red-dark: #c42530;
   --color-blue: #0d3b66;
   --color-yellow: #f4d35e;
-  --color-orange: #ee964b;
+  --color-orange: #f08441;
   --color-off-white: #faf0ca; */
 
-body{
-    font-family: 'Open Sans', sans-serif; 
-    
+body {
+    font-family: --font-sans, 'Open Sans', sans-serif;   
 }
-.hero{
+
+h2 {
+    display: inline-block;
+}
+
+
+/* header */
+.hero {
     width: 100%;
     height: auto;
 }
-
-/* header */
 .header {
     margin: 4vh;
 }
