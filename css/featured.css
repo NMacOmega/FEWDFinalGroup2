@@ -17,12 +17,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .text1 > p {
     font-size: 1.6rem;
     width: 60%;
     text-align: left;
+    /* margin: auto; */
     margin-right: 200px;
     margin-left: 300px;
     margin-top: 20px;
@@ -33,12 +35,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   .text2 > p {
     font-size: 1.6rem;
     width: 60%;
     text-align: center;
+    /* margin: auto; */
     margin-right: 200px;
     margin-left: 300px;
     margin-top: 20px;
@@ -51,7 +55,10 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* margin-left: 100px; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* margin: auto; */
+    margin-left: 100px;
 
   }
 
@@ -103,9 +110,11 @@ body {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: flex-start;
+        /* margin: auto; */
         /* display: flex;
-        justify-content: right;
-        margin-right: 60px; */
+        justify-content: right; */
+        margin-right: 60px;
     
       }
     
