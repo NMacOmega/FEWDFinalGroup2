@@ -31,13 +31,18 @@ FEWD '22 Final Project, Group 2.
 4. Attempted to adjust responsiveness of featured page, to no real avail.
 5. Nathaniel adjusted the responsiveness of the featured page, resolving the errors! Thank you :D
 
+9/27 -- Nathaniel:
+
+1. Added instructions to Readme file to include directions on using the prompt.html forms
+
+
 # Prompt.html Page Instructions
 
 If you Navigate to [prompt.html](prompt.html), You will find a form to get an image file resulting from a text input,
 or get a blob of text resulting from an image upload by file name. This functionality is limited to the following
 interactions:
 
-### Get Image from Text Form (Left Form)
+### Get Image from Text Form (Left Form)[^1]
 
 | Type any of these words                                                             | Resulting Image                                                   |
 | ----------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -53,13 +58,17 @@ interactions:
 | art<br />speckled<br />pattern                                                      | pattern_square_primary_speckled_robert_keane.jpg                  |
 | abstract<br/>art                                                                    | untitle_ian_dooley.jpg                                            |
 
-### Get Text from Image Form (Right Form)
+### Get Text from Image Form (Right Form)[^2]
 
 ##### \*The image itself is irrelevant, any `.jpeg, .jpg, .png, .gif, .jfif` file will work as long as the file name matches any of the criteria below:
 
 | Any of these words in image file name | Resulting Text Block |
+|:-----:|:-----:|
 |love<br/>dog<br/>puppy| "You are a dog walker with little interest in anyone with fewer than four feet..." |
 |thriller<br/>beach<br/>murder|"IT'S LIKE DANCING SITTING DOWN. Squeeze -- tap -- release -- twist..."|
 |railroad<br/>steam<br/>America|"The year is 1830, and the American railroad system is beginning to..."|
 |architecture<br/>beauty<br/>building|"Architecture should speak of its time and place, but yearn for timelessness..."|
 |crow<br/>truck<br/>beach<br/>funny<br/>carr<br/>joke|"Researchers for the Massachusetts Turnpike Authority found over 200 dead crows near..."|
+
+[^1]: These interactions are based on object `imageSources` located in [prompt-image-samples.js](https://github.com/KatieAlleena/FEWDFinalGroup2/blob/main/js/prompt-image-samples.js)
+[^2]: These interactions are based on object `writingSources` in [prompt-writing-samples.js](https://github.com/KatieAlleena/FEWDFinalGroup2/blob/main/js/prompt-writing-samples.js)
