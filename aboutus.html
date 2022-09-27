@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/mission.css" />
+    <link rel="stylesheet" href="./css/aboutus.css" />
     <script src="./js/handlebars.min-v4.7.7.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,40 +24,48 @@
       <main class="page__content">
       
         <!-- BEGIN PAGE CONTENT --> 
-         <img class='hero' src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tbXVuaXR5JTIwcGFpbnRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt=""
-        />
-        <section class="header">
-          <h1>
-            <div>
-              <span class="about_title">About</span>
-              <span class="title_color">Us</span>
-            </div>
-          </h1>
-          <p class="about_text_header">
-            Fine Art Fusion believes in the power of art, the written word and
-            the ability they possess to transform our lives and elevate our
-            everyday experiences. We seek to be the connecting force in
-            developing our artists individually and as a collective.We are a
-            group of individuals with a passion for supporting creatives —
-            <span class="text_highlight"
-              >connecting creatives makes us happy.</span
-            >
-          </p>
-                <!-- <div>
-                  
-                  <p id="iframe_center">
-                    <iframe
-                      src="https://www.youtube.com/embed/sQokdm3gBmE"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
-                    ></iframe>
-                  </p>
-                </div> -->
-        </section>
+
+            
+       
         <div class="about_layout">
-          <div class="about_main">
+          <div class="about_main"> 
+            
+            <!-- hero image -->
+            <div>
+              <img class='hero' src="https://images.unsplash.com/photo-1468421870903-4df1664ac249?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Y29tbXVuaXR5JTIwcGFpbnRpbmd8ZW58MHx8MHx8&auto=format&fit=crop&w=400&q=60" alt=""/>
+            </div>
+
+            <section class="header">
+              <h1>
+                <div>
+                  <span class="about_title">About</span>
+                  <span class="title_color">Us</span>
+                </div>
+              </h1>
+              <p class="about_text_header">
+                Fine Art Fusion believes in the power of art, the written word and
+                the ability they possess to transform our lives and elevate our
+                everyday experiences. We seek to be the connecting force in
+                developing our artists individually and as a collective.We are a
+                group of individuals with a passion for supporting creatives —
+                <span class="text_highlight"
+                  >connecting creatives makes us happy.</span
+                >
+              </p>
+                    <!-- <div>
+                      
+                      <p id="iframe_center">
+                        <iframe
+                          src="https://www.youtube.com/embed/sQokdm3gBmE"
+                          title="YouTube video player"
+                          frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                          allowfullscreen
+                        ></iframe>
+                      </p>
+                    </div> -->
+            </section>
+
             <section id="about_us">
               <div class="about_video_layout">
                 <div class="about_text_group">
@@ -118,27 +126,7 @@
                   </div>
                 </div>
                 </div>
-                
-                <!-- <div>
-                    <h4 class="values_headers">Community</h4>
-                    <p class="about_text">
-                      We are a group of individuals with a passion for
-                      supporting creatives
-                    </p>
-                    <h4 class="values_headers">Connections</h4>
-                    <p class="about_text">
-                      We are a group of individuals with a passion for
-                      supporting creatives
-                    </p>
-                    <h4 class="values_headers">Creativity</h4>
-                    <p class="about_text">
-                      We are a group of individuals with a passion for
-                      supporting creatives
-                    </p>
-                </div> -->
-               
             </section>  
-
 
             <section id="timeline">
               <div class="about_text_group">
@@ -209,25 +197,28 @@
                   <span class="about_title">Connect with</span>
                   <span class="title_color">Us</span>
                 </div>
+                
               </div>
+
+              <p> We would love to connect with you. Let us know where we can collaborate to enhance our creative community. </p><br>
+              
+                <!-- form -->
               <div>
-            
-                <p> We would love to connect with you. Let us know where we can collaborate to enhance our creative community. </p><br>
                 <form>
                   <label for="fname"></label>
-                  <input id="fname" placeholder='First Name'>
+                  <input type='text' id="fname" placeholder='First Name'>
                   <br><br>
                   <label for="lname"></label>
-                  <input id="lname" placeholder='Last Name'>
+                  <input type='text' id="lname" name="lname" placeholder='Last Name'>
                   <br><br>
                    <label for="email"></label>
-                  <input id="email" placeholder='Email'>
+                  <input type='email' id="email" name="email" placeholder='Email'>
                   <br><br>
                    <label for="phone"></label>
-                  <input id="phone" placeholder='Phone'>
+                  <input type='text' id="phone" name="phone" placeholder='Phone'>
                   <br><br>
                    <label for="outreach"></label>
-                  <input id="outreach" placeholder='To help us route your request, please briefly tell us the nature of your outreach'>
+                  <input type='text'id="outreach" name="outreach" placeholder='To help us route your request, please briefly tell us the nature of your outreach'>
                   <div>
                     Submit
                   </div>
@@ -266,6 +257,7 @@
             <hr>
             <br>
             <br>
+
             <section id="team">
               <div class="about_text_group">
                 <div>

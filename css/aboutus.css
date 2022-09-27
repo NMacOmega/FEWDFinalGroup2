@@ -7,13 +7,12 @@
   --color-off-white: #faf0ca; */
 
 body{
-     
     font-family: 'Open Sans', sans-serif; 
-    width: 90vw;
+    
 }
 
 .hero{
-    width: 90vw;
+    width: 96vw;
     height: auto;
 }
 /* header */
@@ -40,8 +39,7 @@ body{
 .about_main {
     min-height: 60vh;
     flex-grow: 2;
-    overflow: auto;
-    padding: 1.5em;
+    padding-bottom: 3vh;
 }
 
 
@@ -109,9 +107,12 @@ body{
 .about_text, .about_text_header{
     font-size: 1.2em;
     margin-bottom: 1vh;
-    margin-top: 1vh;
-   
+    margin-top: 1vh;   
 }
+.header{
+    text-align: left;
+}
+
 .about_text_mission{
     font-size: 1.5em;
     text-align: center;
@@ -283,3 +284,4 @@ i:hover {
     font-weight: 200;
     font-size: .8em;
 }
+
