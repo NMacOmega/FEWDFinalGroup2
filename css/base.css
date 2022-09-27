@@ -180,6 +180,10 @@ body {
 
   .nav__item--logo {
     background-color: var(--color-blue);
+    
+  }
+
+  .nav__item--text {
     color: var(--color-off-white);
   }
 
