@@ -61,6 +61,7 @@ body {
 
 .hero-text > button:hover {
   background: #c42530;
+  cursor: pointer;
 }
 
 /* END OF HERO SECTION */
@@ -138,6 +139,7 @@ form {
 
 #submit:hover {
   background: #c42530;
+  cursor: pointer;
 }
 
 /* .hero-placeholder {
