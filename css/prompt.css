@@ -206,7 +206,6 @@
   -webkit-animation-direction: alternate;
   -webkit-animation-duration: 0.5s;
   animation-delay: 2s;
-  /* outline: solid 1px #f00; */
   border: none;
 }
 
@@ -247,13 +246,14 @@
 
 .prompt-art__result {
 }
+
 .prompt-art__result-text {
   color: #fff;
   margin-bottom: 2rem;
   font-size: 1.6em;
   text-align: center;
 }
-/* Need to style*/
+
 .prompt-art__result-inner {
   display: flex;
   flex-direction: column;
@@ -265,14 +265,6 @@
   width: 100%;
   object-fit: contain;
   margin-bottom: 2rem;
-}
-
-/*Font sizes should be responsive Need to use Clamp*/
-.prompt-art__result-title {
-}
-.prompt-art__result-artist {
-}
-.prompt-art__result-desc {
 }
 
 .prompt-art__result-download {
@@ -485,8 +477,6 @@ prompt-write__result-text--container {
 
 /*800px breakpoint - 800 / 16 = 50em*/
 @media only screen and (max-width: 50em) {
-  /*Turn attibution into a column setup*/
-  /*Minimize padding */
   .prompt-art__result {
     width: 95%;
     padding: 2vw;
@@ -521,9 +511,6 @@ prompt-write__result-text--container {
 
 /*600px breakpoint - 600 / 16 = 37.5em*/
 @media only screen and (max-width: 37.5em) {
-  /*Turn attibution into a column setup*/
-  /*Minimize padding */
-
   .page__content {
     padding: 0;
   }
