@@ -12,6 +12,21 @@ h2 {
   text-transform: capitalize;
 }
 
+h1 {
+  font-size: 1.9em;
+  padding: 0px;
+}
+
+h3 {
+  font-size: 1.0em;
+  padding: 0px;
+}
+
+h4 {
+  font-size: 1.4rem;
+  padding: 0px;
+}
+
 /*Collab of Month section*/
 .text1 {
   display: flex;

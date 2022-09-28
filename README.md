@@ -31,6 +31,12 @@ FEWD '22 Final Project, Group 2.
 4. Attempted to adjust responsiveness of featured page, to no real avail.
 5. Nathaniel adjusted the responsiveness of the featured page, resolving the errors! Thank you :D
 
+9/27 -- Katie
+1. Made very minor updates to website copy, such as adding spaces and rewording one sentence.
+2. Updated featured2.css to reflect in Author Content as suggested.
+3. Noticed an error with image on about us page for cfelton.png -- in opening it in photoshop and on windows, an error popped up stating the image wasn't a .png file. I cropped the image in photoshop and resaved it as a .jpg, which resolved the error.
+4. Fixed file path notation so image error will not persist across previews for different users.
+
 9/27 -- Nathaniel:
 
 1. Added instructions to Readme file to include directions on using the prompt.html forms
