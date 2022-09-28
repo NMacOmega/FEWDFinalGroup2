@@ -126,6 +126,9 @@ h1, h2 {
 
 
 /* our values */
+.values{
+    margin-top: 22vh;
+}
 .cards {
     display: flex;
     justify-content: space-evenly;   
@@ -198,6 +201,7 @@ h1, h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content:center;
+
 }
 .meet_team {
     width: 13vw;
@@ -232,3 +236,27 @@ i:hover {
 }
 
 
+@media only screen and (max-width: 600px){
+    .values {
+            margin-top: 3vh;
+        }
+
+    .meet_team {
+        width: 50vw;
+        height: auto;
+        border-radius: 10%;
+    }
+
+    .team_icons {
+        font-size: 2.5vw;
+        font-weight: 700;
+    }
+
+    .team_block {
+        width: 60vw;
+        height: auto;
+        margin-bottom: 4vh;
+        text-align:center;
+
+    }
+}
