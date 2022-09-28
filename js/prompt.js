@@ -1,3 +1,26 @@
+console.log(`
+       /$$                                                                          /$$                           /$$       
+      /$$/                                                                         | $$                          |  $$      
+     /$$/              /$$$$$$$  /$$$$$$  /$$$$$$$         /$$$$$$$  /$$$$$$   /$$$$$$$  /$$$$$$                  \  $$     
+    /$$/              /$$_____/ |____  $$| $$__  $$       /$$_____/ /$$__  $$ /$$__  $$ /$$__  $$                  \  $$    
+   /$$/              | $$        /$$$$$$$| $$  \ $$      | $$      | $$  \ $$| $$  | $$| $$$$$$$$                   \  $$   
+  /$$/               | $$       /$$__  $$| $$  | $$      | $$      | $$  | $$| $$  | $$| $$_____/                    \  $$  
+ /$$/                |  $$$$$$$|  $$$$$$$| $$  | $$      |  $$$$$$$|  $$$$$$/|  $$$$$$$|  $$$$$$$                     \  $$ 
+|__/                  \_______/ \_______/|__/  |__/       \_______/ \______/  \_______/ \_______/                      \__/ 
+/$$                                                                           /$$   /$$     /$$                         /$$
+|  $$                                                                         |__/  | $$    |__/                        /$$/
+ \  $$      /$$$$$$$  /$$$$$$  /$$$$$$/$$$$  /$$$$$$/$$$$  /$$   /$$ /$$$$$$$  /$$ /$$$$$$   /$$  /$$$$$$   /$$$$$$$   /$$/ 
+  \  $$    /$$_____/ /$$__  $$| $$_  $$_  $$| $$_  $$_  $$| $$  | $$| $$__  $$| $$|_  $$_/  | $$ /$$__  $$ /$$_____/  /$$/  
+   \  $$  | $$      | $$  \ $$| $$ \ $$ \ $$| $$ \ $$ \ $$| $$  | $$| $$  \ $$| $$  | $$    | $$| $$$$$$$$|  $$$$$$  /$$/   
+    \  $$ | $$      | $$  | $$| $$ | $$ | $$| $$ | $$ | $$| $$  | $$| $$  | $$| $$  | $$ /$$| $$| $$_____/ \____  $$/$$/    
+     \  $$|  $$$$$$$|  $$$$$$/| $$ | $$ | $$| $$ | $$ | $$|  $$$$$$/| $$  | $$| $$  |  $$$$/| $$|  $$$$$$$ /$$$$$$$/$$/     
+      \__/ \_______/ \______/ |__/ |__/ |__/|__/ |__/ |__/ \______/ |__/  |__/|__/   \___/  |__/ \_______/|_______/__/                                                                                                                                 
+
+
+←-- RESIZE CONSOLE
+
+      `);
+
 const randomPlaceholders = [
   "Pen down your thoughts",
   "Write your masterpiece",
@@ -5,7 +28,7 @@ const randomPlaceholders = [
   "Let us complement your words",
 ];
 const randomArtistTags = [
-  "Made with love by:",
+  "Made thoughtfully by:",
   "Produced by:",
   "A genius piece by:",
   "This is a work of:",
@@ -60,7 +83,7 @@ writeInputFile.addEventListener("change", generateWriting);
 
 /*Startup actions for a unique experience*/
 artInputTextarea.placeholder =
-  randomPlaceholders[generateRandom(0, randomPlaceholders.length - 1)];
+  randomPlaceholders[generateRandom(randomPlaceholders.length)];
 
 /* Utility functions to show elements and copy text*/
 function addClass(className, elems) {
@@ -96,7 +119,7 @@ function copyToClipboard(e) {
 function generateArt(e) {
   e.preventDefault();
   /* Form Validations */
-  console.log(artInputTextarea.value);
+  console.log(`You typed: \n ${artInputTextarea.value}`);
   remClass("artist__highlight--active", [artArtistHighlightContainer]);
   addClass("--round-corners-all", [artContainer]);
   remClass("prompt-art__form-textarea--alert", [artInputTextarea]);
@@ -134,18 +157,19 @@ function generateArt(e) {
     source: imageSources,
     index: imageSearchIndex,
   });
-  console.log(art);
+  console.log(`Art result:`);
+  console.table(art);
 
   if (art && art.link) {
     artResultTargetImg.src = art.link;
     artResultTargetImg.alt = art.description;
 
     artInputTextarea.placeholder =
-      randomPlaceholders[generateRandom(0, randomPlaceholders.length - 1)];
+      randomPlaceholders[generateRandom(randomPlaceholders.length)];
 
     artArtistHighlightImg.src = art.artist_link;
     artArtistHighlightTagline.textContent =
-      randomArtistTags[generateRandom(0, randomArtistTags.length - 1)];
+      randomArtistTags[generateRandom(randomArtistTags.length)];
     artArtistHighlightName.textContent = art.artist;
     artResultTargetTitle.textContent = art.title;
     artResultTargetArtist.textContent = art.artist;
@@ -225,7 +249,7 @@ function generateWriting(e) {
     writeArtistHighlightImg.src = literature.artist_link;
     writeArtistHighlightName.textContent = literature.artist;
     writeArtistHighlightTagline.textContent =
-      randomArtistTags[generateRandom(0, randomArtistTags.length - 1)];
+      randomArtistTags[generateRandom(randomArtistTags.length)];
 
     setTimeout(() => {
       remClass("--hidden", [
@@ -272,41 +296,23 @@ function createSearchIndex(source) {
 function getSample(params) {
   const { text: textInput, source: sourceGroup, index: sourceIndex } = params;
 
-  console.log(sourceGroup);
-  console.log(sourceIndex);
-
   let sourceResults = [];
 
   Object.entries(sourceIndex).map(([term, sources]) => {
-    console.log(term);
-    console.log(sources);
-
     var re = new RegExp(term, "gi");
     if (textInput.match(re)) sourceResults = [...sourceResults, ...sources];
   });
 
-  console.log(sourceResults);
+  console.log(`Matching Sources: \n ${sourceResults}`);
 
   if (sourceResults.length <= 0) return null;
 
-  let finalInd = generateRandom(0, sourceResults.length - 1);
-  let finalSource = sourceResults[finalInd][0];
-  console.log(finalSource);
+  let finalInd = generateRandom(sourceResults.length);
+  console.log(finalInd);
+  let finalSource = sourceResults[finalInd];
   return sourceGroup[finalSource];
 }
 
-function generateRandom(min = 0, max = 100) {
-  // find diff
-  let difference = max - min;
-
-  // generate random number
-  let rand = Math.random();
-
-  // multiply with difference
-  rand = Math.floor(rand * difference);
-
-  // add with min value
-  rand = rand + min;
-
-  return rand;
+function generateRandom(max) {
+  return Math.floor(Math.random() * max);
 }

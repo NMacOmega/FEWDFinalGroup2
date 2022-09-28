@@ -426,6 +426,8 @@ prompt-write__result-text--container {
 }
 .artist__highlight--img {
   width: 10rem;
+  height: 10rem;
+  object-fit: cover;
   border-radius: 50%;
   margin: auto;
 }
@@ -539,7 +541,7 @@ prompt-write__result-text--container {
     padding-left: 3vw;
   }
 }
-
+/*550px breakpoint - 550 / 16 =  34.375em*/
 @media only screen and (max-width: 34.375em) {
   .prompt__container {
     width: 100%;
@@ -547,11 +549,6 @@ prompt-write__result-text--container {
 
   .prompt-art {
     width: 100%;
-  }
-
-  .artist__highlight--img {
-    width: 30vw;
-    height: 30vw;
   }
 }
 
