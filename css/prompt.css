@@ -353,8 +353,9 @@
   cursor: pointer;
 }
 
-prompt-write__result-text--container {
+.prompt-write__result-text--container {
   overflow-y: auto;
+  max-height: 50vh;
 }
 
 .prompt-write__result-text {
