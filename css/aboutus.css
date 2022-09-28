@@ -137,7 +137,7 @@ h1, h2 {
 }
 .values_headers,.values_headers1,.values_headers2 {
     color:var(--color-red-dark);
-    font-size: 3vw;
+    font-size: 2vw;
     padding-top: 1vh;
     margin-bottom: 3vh;
 }
