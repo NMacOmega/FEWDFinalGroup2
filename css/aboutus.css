@@ -31,7 +31,7 @@ h1, h2 {
 
 /* header */
 .hero {
-    width: 100vw;
+    width: 100%;
     height: auto;
 }
 .header {
@@ -48,87 +48,7 @@ h1, h2 {
 }
 
 
-/* timeline */
-#timeline {
-    display: inline-block;
-}
-.timeline {
-    width: 80vw;
-    height: 10vh;
-    text-align: center;
-    margin-top: 4vh;
-}
-.timeline_display {
-    display: flex;
-    justify-content: center;
-}
-.timeline_text {
-    width: 4vw;
-    height: auto;
-}
-.line1 {
-    height: .5vh;
-    width: 15vw;
-    background-color: rgb(204, 202, 202);
-    display: inline-block;
-    align-self: center;
-}
-.milestones {
-    font-weight: 200;
-    font-size: 2vw;
-    text-align: left;
-    margin-top: 3vh;
-    margin-bottom: 3vh;
-}
-.milestones > span {
-    font-size: 2vw;
-    font-weight: 600;
-}
-
-/* timeline circles */   
-.circle {
-    display: inline-block; 
-    height: 2vh;
-    width: 2vh;
-    border-radius: 50%;
-}
-.circle1 {
-    background-color: var(--color-blue);
-}
-.circle1p {
-    color: var(--color-blue);
-}
-.circle2 {
-    background-color: var(--color-orange);
-}
-.circle2p {
-    color: var(--color-orange);
-}
-.circle3 {
-    background-color: var(--color-red-dark);
-}
-.circle3p {
-    color: var(--color-red-dark);
-}
-.circle4 {
-    background-color: rgb(0, 128, 0);
-}
-.circle4p {
-    color: rgb(0, 128, 0);
-}
-.circle5 {
-    background-color: #b069da;
-}
-.circle5p {
-    color: #b069da;
-}
-
-
-
 /* our values */
-.values{
-    margin-top: 22vh;
-}
 .cards {
     display: flex;
     justify-content: space-evenly;   
@@ -237,10 +157,6 @@ i:hover {
 
 
 @media only screen and (max-width: 600px){
-    .values {
-            margin-top: 3vh;
-        }
-
     .meet_team {
         width: 50vw;
         height: auto;
