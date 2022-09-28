@@ -78,6 +78,7 @@ h1, h2 {
     font-size: 2vw;
     text-align: left;
     margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 .milestones > span {
     font-size: 2vw;
@@ -184,10 +185,10 @@ h1, h2 {
 .socials{
     display: flex;
     justify-content: space-evenly;
-    border-top: solid .5vw rgb(221, 219, 219);
-    border-bottom: solid .5vw var(--color-grey);
+    border-top: solid .5vh rgb(221, 219, 219);
+    border-bottom: solid .5vh var(--color-grey);
     padding: 2vh 0;
-    margin: 4vh 0; 
+    margin: 2vh 0; 
 }
 
 
