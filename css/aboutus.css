@@ -160,19 +160,16 @@ i:hover {
     .meet_team {
         width: 50vw;
         height: auto;
-        border-radius: 10%;
     }
-
-    .team_icons {
-        font-size: 2.5vw;
-        font-weight: 700;
+    .team_icons,.values_headers,
+    .values_headers1,
+    .values_headers2 {
+        font-size: 3vw; 
     }
-
     .team_block {
         width: 60vw;
         height: auto;
         margin-bottom: 4vh;
         text-align:center;
-
     }
 }
