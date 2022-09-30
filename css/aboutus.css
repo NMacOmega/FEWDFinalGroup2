@@ -52,7 +52,7 @@ h1, h2 {
 .cards {
     display: flex;
     justify-content: space-evenly;   
-    margin-top: 3vh;
+    margin-top: 2vh;
 }
 .card_image {
     width: 22vw;
@@ -76,6 +76,9 @@ h1, h2 {
     flex-wrap: wrap;
     background-color: rgba(244, 211, 94,.2); 
     margin-top: 2vh;
+}
+.values_text{
+    font-size: 2vw;
 }
 
 /* our mission */
