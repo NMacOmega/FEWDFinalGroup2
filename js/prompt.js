@@ -34,6 +34,10 @@ const randomArtistTags = [
   "This is a work of:",
 ];
 
+/*File Directory variables*/
+var imageFileString = "./public/img/prompt-results/art/";
+var artistFileString = "./public/img/prompt-results/artists/";
+
 /* Set up search index tools*/
 const imageSearchIndex = createSearchIndex(imageSources);
 const writingSearchIndex = createSearchIndex(writingSources);
@@ -161,13 +165,13 @@ function generateArt(e) {
   console.table(art);
 
   if (art && art.link) {
-    artResultTargetImg.src = art.link;
+    artResultTargetImg.src = `${imageFileString}${art.filename}`;
     artResultTargetImg.alt = art.description;
 
     artInputTextarea.placeholder =
       randomPlaceholders[generateRandom(randomPlaceholders.length)];
 
-    artArtistHighlightImg.src = art.artist_link;
+    artArtistHighlightImg.src = `${artistFileString}${art.artist_filename}`;
     artArtistHighlightTagline.textContent =
       randomArtistTags[generateRandom(randomArtistTags.length)];
     artArtistHighlightName.textContent = art.artist;
@@ -246,7 +250,7 @@ function generateWriting(e) {
     writeResultTargetText.textContent = literature.text;
     writeResultTargetCitation.textContent = literature.citation;
 
-    writeArtistHighlightImg.src = literature.artist_link;
+    writeArtistHighlightImg.src = `${artistFileString}${literature.artist_filename}`;
     writeArtistHighlightName.textContent = literature.artist;
     writeArtistHighlightTagline.textContent =
       randomArtistTags[generateRandom(randomArtistTags.length)];
