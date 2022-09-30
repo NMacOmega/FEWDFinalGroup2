@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="Fine Art Fusion About Us"
+      content="About Us content for Fine Art Fusion. Sections include an about us summary, a timeline of the company's history and ways to connect and get involved. And it includes a list of the company's values, mission and team members. "
+    />
     <link rel="stylesheet" href="./css/base.css" />
-    <link rel="stylesheet" href="./css/signup.css" />
+    <link rel="stylesheet" href="./css/form.css" />
     <link rel="stylesheet" href="./css/aboutus.css" />
     <script src="./js/handlebars.min-v4.7.7.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -38,17 +42,13 @@
             </div>
 
             <section class="header">
-              <h1>
-                <div>
-                  <span class="about_title">About</span>
-                  <span class="title_color">Us</span>
-                </div>
-              </h1>
+              <h1>About</h1>
+              <h1 class="title_color">Us</h1>
               <p class="about_text_header">
                 Fine Art Fusion believes in the power of art, the written word
                 and the ability they possess to transform our lives and elevate
                 our everyday experiences. We seek to be the connecting force in
-                developing our artists individually and as a collective.We are a
+                developing our artists individually and as a collective. We are a
                 group of individuals with a passion for supporting creatives —
                 <span class="text_highlight"
                   >connecting creatives makes us happy.</span
@@ -56,77 +56,14 @@
               </p>
             </section>
 
-            <section id="timeline">
-              <div class="about_text_group">
-                <div>
-                  <h2 class="about_title">Our</h2>
-                  <h2 class="title_color">History</h2>
-                </div>
-              </div>
-              <div class="timeline">
-                <div class="timeline_display">
-                  <div class="line1"></div>
-                  <div class="circle1">
-                    <div class="line2">
-                      <p class="milestones">
-                        <span class="circle1p">2017</span> Fine Art Fusion
-                        founded
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="line1"></div>
-                  <div class="circle2">
-                    <div class="line2">
-                      <p class="milestones">
-                        <span class="circle2p">2018</span><br />
-                        1st creatives collaboration
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="line1"></div>
-                  <div class="circle3">
-                    <div class="line2">
-                      <p class="milestones">
-                        <span class="circle3p">2019</span><br />
-
-                        1st annual creatives retreat
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="line1"></div>
-                  <div class="circle5">
-                    <div class="line2">
-                      <p class="milestones">
-                        <span class="circle5p">2021</span><br />
-                        Fine Art Fusion goes international
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="line1"></div>
-                  <div class="circle6">
-                    <div class="line2">
-                      <p class="milestones">
-                        <span class="circle6p">2022</span>
-                        <br />
-                        500 creatives membership milestone
-                      </p>
-                    </div>
-                  </div>
-                  <div class="line1"></div>
-                </div>
-              </div>
-            </section>
-
             <section id="our_values">
-              <div class="our_values">
-                <h2 class="about_title">Our</h2>
-                <h2 class="title_color">Values</h2>
+              <div class="about_text_group">
+                <div class="values">
+                  <h2 class="about_title">Our</h2>
+                  <h2 class="title_color">Values</h2>
+                </div>
               </div>
-              <p>in community, our curiosity enhances our connections</p>
+              <p class="values_text">in community, our curiosity enhances our connections</p>
               <div class="cards">
                 <div>
                   <p class="card">
@@ -137,9 +74,7 @@
                     />
                   </p>
 
-                  <div class="card_body">
-                    <h3 class="values_headers">Community</h3>
-                  </div>
+                  <h3 class="values_headers">Community</h3>
                 </div>
                 <div>
                   <p class="card">
@@ -150,9 +85,7 @@
                     />
                   </p>
 
-                  <div class="card_body">
-                    <h3 class="values_headers1">Curiosity</h3>
-                  </div>
+                  <h3 class="values_headers1">Curiosity</h3>
                 </div>
                 <div>
                   <p class="card">
@@ -163,19 +96,17 @@
                     />
                   </p>
 
-                  <div class="card_body">
-                    <h3 class="values_headers2">Connections</h3>
-                  </div>
+                  <h3 class="values_headers2">Connections</h3>
                 </div>
               </div>
             </section>
 
             <section id="mission">
-              <div class="about_video_layout">
+              <div class="mission_layout">
                 <div class="about_text_group">
                   <div class="our_mission">
-                    <span class="about_title">Our</span>
-                    <span class="title_color">Mission</span>
+                    <h2 class="about_title">Our</h2>
+                    <h2 class="title_color">Mission</h2>
                   </div>
                   <p class="about_text_mission">
                     We seek to empower our members to establish a community of
@@ -194,35 +125,35 @@
                 </div>
               </div>
 
-              <p>We would love to connect with you!</p>
+              <p class="form__label">We would love to connect with you!</p>
               <br />
 
               <form>
-                <label class="signup__label" for="fname">Name: </label>
+                <label class="form__label" for="fname">Name: </label>
                 <input
-                  class="form__input signup__input-text"
+                  class="form__input-text"
                   type="text"
                   id="fname"
                   name="first name"
                 />
                 <br /><br />
-                <label class="signup__label" for="email">Email: </label>
+                <label class="form__label" for="email">Email: </label>
                 <input
-                  class="form__input signup__input-text"
+                  class="form__input-text"
                   type="email"
                   id="email"
                   name="email"
                 />
 
                 <br /><br />
-                <label class="signup__label" for="phone">Phone:</label>
+                <label class="form__label" for="phone">Phone:</label>
                 <input
-                  class="form__input signup__input-text"
+                  class="form__input-text"
                   type="text"
                   id="phone"
                   name="phone"
                 /><br /><br />
-                <p class="signup__label">
+                <p class="form__label">
                   I would like to:
                   <em>(check all that apply)</em>
                 </p>
@@ -236,7 +167,7 @@
                       name="connect1"
                       value="volunteer"
                     />
-                    <label class="signup__label" for="connect1">
+                    <label class="form__label" for="connect1">
                       Volunteer
                     </label>
 
@@ -247,7 +178,7 @@
                       name="connect2"
                       value="donate"
                     />
-                    <label class="signup__label" for="connect2"> Donate</label>
+                    <label class="form__label" for="connect2"> Donate</label>
 
                     <br /><br />
                     <input
@@ -255,7 +186,7 @@
                       id="connect3"
                       name="connect3"
                       value="event"
-                    /><label class="signup__label" for="connect3">
+                    /><label class="form__label" for="connect3">
                       Attend an Event</label
                     >
 
@@ -265,7 +196,7 @@
                       id="connect4"
                       name="connect4"
                       value="mentor"
-                    /><label class="signup__label" for="connect4">
+                    /><label class="form__label" for="connect4">
                       Become a Mentor
                     </label>
 
@@ -275,25 +206,25 @@
                       id="connect5"
                       name="connect5"
                       value="corporate"
-                    /><label class="signup__label" for="connect5">
+                    /><label class="form__label" for="connect5">
                       Become a Corporate Sponsor</label
                     >
                   </p>
                 </div>
                 <br />
-                <label class="signup__label" for="phone">Other:</label>
+                <label class="form__label" for="other">Other:</label>
                 <input
-                  class="form__input signup__input-text"
+                  class="form__input-text"
                   type="text"
                   id="other"
                   name="other"
                 /><br /><br />
-                <input type="submit" class="signup__page-btn" />
+                <input type="submit" class="form__btn" />
               </form>
             </section>
 
             <div class="socials">
-              <a href="https://www.facebook.com"
+              <a href="https://www.facebook.com" title="Facebook"
                 ><i class="fa-brands fa-facebook fa-2x"></i
               ></a>
               <a href="https://www.twitter.com/" title="Twitter"
@@ -302,18 +233,11 @@
               <a href="https://www.instagram.com/" title="Instagram"
                 ><i class="fa-brands fa-instagram fa-2x"></i
               ></a>
-              <a href="https://www.tiktok.com/" title="TikTok"
-                ><i class="fa-brands fa-tiktok fa-2x"></i
-              ></a>
-
               <a href="https://www.youtube.com/" title="Youtube"
                 ><i class="fa-brands fa-youtube fa-2x"></i
               ></a>
               <a href="https://www.kickstarter.com/" title="Kickstarter"
                 ><i class="fa-brands fa-kickstarter fa-2x"></i
-              ></a>
-              <a href="https://www.pinterest.com/" title="Pinterest"
-                ><i class="fa-brands fa-pinterest fa-2x"></i
               ></a>
             </div>
 
@@ -328,16 +252,16 @@
                 <div class="team_block">
                   <img
                     class="meet_team"
-                    src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8aGVhZHNob3R8ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                    src="./public/img/feltonc.jpg"
                     alt="Catherine Felton team member"
                   />
-                  <h4 class="team_icons">
+                  <h3 class="team_icons">
                     <a
                       href="https://www.linkedin.com/in/catherine-felton-919661163/"
                       title="Catherine Felton's Linkedin"
                       ><i class="fa-brands fa-linkedin"></i></a
                     >&nbsp;&nbsp;Catherine Felton
-                  </h4>
+                  </h3>
                 </div>
                 <div class="team_block">
                   <img
@@ -345,14 +269,14 @@
                     src="./public/img/KatieLinkedInPhoto.jpg"
                     alt="Katie Morton team member"
                   />
-                  <h4 class="team_icons">
+                  <h3 class="team_icons">
                     <a
                       href="https://www.linkedin.com/in/kalleenamorton/"
                       title="Katie Morton's Linkedin"
                       ><i class="fa-brands fa-linkedin"></i
                     ></a>
                     &nbsp;&nbsp;Katie Morton
-                  </h4>
+                  </h3>
                 </div>
                 <div class="team_block">
                   <img
@@ -360,14 +284,14 @@
                     src="./public/img/nmac.jpg"
                     alt="Nathaniel MacIver team member"
                   />
-                  <h4 class="team_icons">
+                  <h3 class="team_icons">
                     <a
                       href="https://www.linkedin.com/in/nmac-12866/"
                       title="Nathaniel MacIver's Linkedin"
                       ><i class="fa-brands fa-linkedin"></i
                     ></a>
                     &nbsp;&nbsp;Nathaniel MacIver
-                  </h4>
+                  </h3>
                 </div>
                 <div class="team_block">
                   <img
@@ -375,14 +299,14 @@
                     src="./public/img/tbarnes.jpg"
                     alt="Tanesha Barnes team member"
                   />
-                  <h4 class="team_icons">
+                  <h3 class="team_icons">
                     <a
                       href="https://www.linkedin.com/in/tanesha-barnes"
                       title="Tanesha Barnes' Linkedin"
                       ><i class="fa-brands fa-linkedin"></i
                     ></a>
                     &nbsp;&nbsp;Tanesha Barnes
-                  </h4>
+                  </h3>
                 </div>
               </div>
             </section>

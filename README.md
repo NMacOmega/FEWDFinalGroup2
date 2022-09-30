@@ -31,6 +31,12 @@ FEWD '22 Final Project, Group 2.
 4. Attempted to adjust responsiveness of featured page, to no real avail.
 5. Nathaniel adjusted the responsiveness of the featured page, resolving the errors! Thank you :D
 
+9/27 -- Katie
+1. Made very minor updates to website copy, such as adding spaces and rewording one sentence.
+2. Updated featured2.css to reflect in Author Content as suggested.
+3. Noticed an error with image on about us page for cfelton.png -- in opening it in photoshop and on windows, an error popped up stating the image wasn't a .png file. I cropped the image in photoshop and resaved it as a .jpg, which resolved the error.
+4. Fixed file path notation so image error will not persist across previews for different users.
+
 9/27 -- Nathaniel:
 
 1. Added instructions to Readme file to include directions on using the prompt.html forms
@@ -39,13 +45,13 @@ FEWD '22 Final Project, Group 2.
 # Prompt.html Page Instructions
 
 If you Navigate to [prompt.html](prompt.html), You will find a form to get an image file resulting from a text input,
-or get a blob of text resulting from an image upload by file name. If two works share a tag, one of the sources is chosen at random. This functionality is limited to the following
+or get a blob of text resulting from an image upload by file name. If two works share a tag, one of the sources is chosen at random. If the word "admin" is included, all works are added to the selection. This functionality is limited to the following
 interactions:
 
 ### Get Image from Text Form (Left Form)[^1]
 
 | Type any of these words                                                             | Resulting Image                                                   |
-| :-----------------------------------------------------------------------------------: | ----------------------------------------------------------------- |
+| :-----------------------------------------------------------------------------------: | :----------------------------------------------------------------: |
 | abstract<br />acrylic<br />art<br />color                                           | acrylic_paint_21_steve-johnson.jpg                                |
 | war<br />europe<br />blood<br />death<br />expansion<br />battle<br />hundwardsland | battle_of_hundwardsland_Jans_von_Loydor.jpg                       |
 | birds<br />boston<br />animal<br />warbler<br />tracing<br />spring<br />light      | boston-public-library_speckled_warblers_lawrence_mcrackenbire.jpg |
