@@ -211,19 +211,20 @@
 
 .prompt-art__form-submit,
 .prompt-write__form-submit {
-  border: 1px solid #000;
-  background-color: #ababab;
-  padding: 1rem 1.6rem;
-  font-size: 1.5rem;
-  max-width: 10rem;
-  border-radius: 20px;
+  border: none;
+  background-color: var(--color-red);
+  padding: 2rem 3.4rem;
+  text-align: center;
+  font-size: 2.8rem;
+  color: #fff;
+  border-radius: 10px;
   align-self: center;
   margin: 3rem;
 }
 
 .prompt-art__form-submit:hover,
 .prompt-write__form-submit:hover {
-  background-color: #cdcdcd;
+  background-color: var(--color-red-dark);
 }
 
 /*Art Result*/
