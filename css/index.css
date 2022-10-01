@@ -46,7 +46,8 @@ body {
   font-size: 3em;
 }
 
-.hero-text > button {
+.hero-text > button,
+.hero-link > button {
   background: var(--color-red);
   border: none;
   padding: 15px 20px;
@@ -58,7 +59,8 @@ body {
   margin-bottom: 160px;
 }
 
-.hero-text > button:hover {
+.hero-text > button:hover,
+.hero-link > button:hover {
   background: var(--color-red-dark);
   cursor: pointer;
 }

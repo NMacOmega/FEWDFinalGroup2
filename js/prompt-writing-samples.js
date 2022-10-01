@@ -1,6 +1,7 @@
 var writingSources = {
   1: {
     artist: "Anita Clarister",
+    artist_filename: "Anita_Clarister.jpg",
     artist_link: "/public/img/prompt-results/artists/Anita_Clarister.jpg",
     text: "You are a dog walker with little interest in anyone with fewer than four feet. Your new client, the handsome owner of a goofy, flatulent French bulldog, changes all of that when you begin to bond over your loveable new charge.",
     citation: "- Anita Clarister",
@@ -10,6 +11,7 @@ var writingSources = {
   2: {
     artist_link: "/public/img/prompt-results/artists/Jaime_Patterson.jpg",
     artist: "Jaime Patterson",
+    artist_filename: "Jaime_Patterson.jpg",
     citation: "- Lost Edens - A True Story",
     text: `IT'S LIKE DANCING SITTING DOWN. Squeeze -- tap -- release -- twist. Left hand -- right foot -- left hand -- right hand.
 
@@ -36,6 +38,7 @@ var writingSources = {
   3: {
     artist_link: "/public/img/prompt-results/artists/jesse_james.jpg",
     artist: "Jesse James",
+    artist_filename: "Jesse_James.jpg",
     citation: "- Jesse James",
     text: `The year is 1830, and the American railroad system is beginning to snake its way across the country. As a surveyor hired under Colonel John Stevens, you have been sent to a remote part of the western territories to scope out the land. During your journey, the landscape starts changing in unexpected ways. The desert sands are now forming hard, sharp peaks, and the reptiles seem to be getting larger the further west you go. The people seem different as well. The settlers you to talk to refuse to make eye contact and are wary of you, regardless of how friendly you are. One older woman warns you not to go too far west, or you might get too close to him. You ask who "he" is, but the old woman shushes you, shakes her head, and shuffles away. Her warning plays over in your mind as you keep riding west, not knowing what lies ahead. Eventually, among the sharpened sand peaks and unspeakable creatures, you see a dark and jagged tower on the far horizon. Soon thereafter, you are captured and brought to the court of the Desert Magus, an ancient warlock with immeasurable power who reveals that he has been the one reshaping the West to his will—and he intends to continue.`,
     tags: ["admin", "railroad", "steam", "america"],
@@ -44,6 +47,7 @@ var writingSources = {
   4: {
     artist_link: "/public/img/prompt-results/artists/frank_gehry.jpg",
     artist: "Frank Gehry",
+    artist_filename: "Frank_Gehry.jpg",
     text: "Architecture should speak of its time and place, but yearn for timelessness.",
     tags: ["admin", "architecture", "beauty", "building"],
     citation: "- Frank Gehry",
@@ -52,6 +56,7 @@ var writingSources = {
   5: {
     artist_link: "/public/img/prompt-results/artists/bobb_burr.jpg",
     artist: "Bobb Burr",
+    artist_filename: "Bobb_Burr.jpg",
     text: `Researchers for the Massachusetts Turnpike Authority found over 200 dead crows near greater Boston recently, and there was concern that they may have died from Avian Flu. A Bird Pathologist examined the remains of all the crows, and, to everyone's relief, confirmed the problem was definitely NOT Avian Flu. The cause of death appeared to be vehicular impacts. However, during the detailed analysis it was noted that varying colors of paints appeared on the bird's beaks and claws. By analyzing these paint residues it was determined that 98% of the crows had been killed by impact with trucks, while only 2% were killed by an impact with a car. MTA then hired an Ornithological Behaviorist to determine if there was a cause for the disproportionate percentages of truck kills versus car kills. The Ornithological Behaviorist very quickly concluded the cause: when crows eat road kill, they always have a look-out crow in a nearby tree to warn of impending danger. The scientific conclusion was that while all the lookout crows could say "Cah", none could say "Truck."`,
     citation: "- Bobb Burr",
     tags: ["admin", "crow", "truck", "beach", "funny", "joke", "carr"],
