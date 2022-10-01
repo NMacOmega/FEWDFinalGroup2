@@ -211,11 +211,7 @@
 
   .card__work-text {
     font-size: 1.2rem;
-    padding: 0 3rem;
-    color: #0d3b66;
-    width: 85%;
-    font-weight: 500;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
 
   .card__artist-desc {

@@ -180,7 +180,7 @@ function generateArt(e) {
 
     artResultTargetDesc.textContent = art.description;
     artResultTargetText.textContent = "Here is your image!";
-    artResultTargetDownload.href = art.link;
+    artResultTargetDownload.href = `${imageFileString}${art.filename}`;
     artResultTargetDownload.download = art.filename;
 
     setTimeout(() => {
