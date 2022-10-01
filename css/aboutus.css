@@ -27,12 +27,15 @@ h1, h2 {
 .title_color {
     color: var(--color-red);
 }
-
+h2 {
+    margin-top: 4vh;
+}
 
 /* header */
 .hero {
     width: 100%;
     height: auto;
+    margin-bottom: 2vw;
 }
 .header {
     margin: 0 7vw;
@@ -63,7 +66,7 @@ h1, h2 {
     color:var(--color-red-dark);
     font-size: 2vw;
     padding-top: 1vh;
-    margin-bottom: 3vh;
+    margin-bottom: 1vh;
 }
 .values_headers2 {
     color:var(--color-blue);
@@ -174,5 +177,8 @@ i:hover {
         height: auto;
         margin-bottom: 4vh;
         text-align:center;
+    }
+    h2 {
+        margin-top: 1vh;
     }
 }
