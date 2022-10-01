@@ -200,11 +200,31 @@
 
 @media only screen and (max-width: 62.5em) {
   .card__grid {
-    grid-template-columns: 60%;
+    grid-template-columns: 75%;
     grid-auto-rows: min-content;
+    
   }
 
   .card {
     margin: 2rem 0;
   }
+
+  .card__work-text {
+    font-size: 1.2rem;
+    padding: 0 3rem;
+    color: #0d3b66;
+    width: 85%;
+    font-weight: 500;
+    margin-top: 4rem;
+  }
+
+  .card__artist-desc {
+    font-size: 1.3rem;
+  }
+
+  .card__artist-picture {
+    width: 18rem;
+    height: 18rem;
+
+
 }
