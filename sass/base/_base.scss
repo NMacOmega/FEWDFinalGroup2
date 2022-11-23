@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  //This defines what 1srem means;
+  font-size: 62.5%; //1rem = 10px at this level
+}
+
+body {
+  box-sizing: border-box;
+}
+
+::selection {
+  background-color: $color-primary; //Makes highlighted text green with white text!!
+  color: $color-white;
+}
